@@ -44,23 +44,24 @@ let searchinGhost = new SearchinGhost({
 const QUOTES_SEARCH_BAR = document.querySelector("#search-quotes") || false;
 const QUOTES_SEARCH_BAR_DEVICE = document.querySelector("#search-quotes-device") || false;
 
-QUOTES_SEARCH_BAR ? QUOTES_SEARCH_BAR.addEventListener("input", syncDeviceSearch) : false;
-QUOTES_SEARCH_BAR_DEVICE ? QUOTES_SEARCH_BAR_DEVICE.addEventListener("input", syncDesktopSearch) : false;
+QUOTES_SEARCH_BAR ? QUOTES_SEARCH_BAR.addEventListener("input", function () { syncDeviceSearch(QUOTES_SEARCH_BAR, QUOTES_SEARCH_BAR_DEVICE) }) : false;
+QUOTES_SEARCH_BAR_DEVICE ? QUOTES_SEARCH_BAR_DEVICE.addEventListener("input", function () { syncDesktopSearch(QUOTES_SEARCH_BAR, QUOTES_SEARCH_BAR_DEVICE) }) : false;
 
 const RECOMMENDED_SEARCH_BAR = document.querySelector("#search-recommended") || false;
 const RECOMMENDED_SEARCH_BAR_DEVICE = document.querySelector("#search-recommended-device") || false;
 
-RECOMMENDED_SEARCH_BAR ? RECOMMENDED_SEARCH_BAR.addEventListener("input", syncDeviceSearch) : false;
-RECOMMENDED_SEARCH_BAR_DEVICE ? RECOMMENDED_SEARCH_BAR_DEVICE.addEventListener("input", syncDesktopSearch) : false;
+RECOMMENDED_SEARCH_BAR ? RECOMMENDED_SEARCH_BAR.addEventListener("input", function() {syncDeviceSearch(RECOMMENDED_SEARCH_BAR, RECOMMENDED_SEARCH_BAR_DEVICE)}) : false;
+RECOMMENDED_SEARCH_BAR_DEVICE ? RECOMMENDED_SEARCH_BAR_DEVICE.addEventListener("input", function() {syncDesktopSearch(RECOMMENDED_SEARCH_BAR, RECOMMENDED_SEARCH_BAR_DEVICE)}) : false;
 
 
-function syncDeviceSearch() {
-    QUOTES_SEARCH_BAR_DEVICE.value = QUOTES_SEARCH_BAR.value;
+function syncDeviceSearch(desktop, device) {
+    device.value = desktop.value;
 }
 
-function syncDesktopSearch() {
-    QUOTES_SEARCH_BAR.value = QUOTES_SEARCH_BAR_DEVICE.value;
+function syncDesktopSearch(desktop, device) {
+    desktop.value = device.value;
 }
+
 
 let searchQuotes = initQuoteSearch();
 let searchRecommended = initRecommendedSearch();
