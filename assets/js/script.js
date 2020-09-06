@@ -237,7 +237,6 @@ function initRecommendedSearch() {
             key: SEARCH_API_KEY_RECOMMENDED,
             inputId: ['search-recommended', 'search-recommended-device'],
             outputId: ['recommended-results'],
-            //url: 'https://localhost:2368', // comment out for production
             template: function (result) {
                 return BOOK_CARD_TEMPLATE(result);
             },
@@ -454,7 +453,7 @@ const QUOTE_CARD_TEMPLATE = (result) => {
 
 const BOOK_CARD_TEMPLATE = (result) => {
     return `
-    <a class="quote-card" href="${result.url}">
+    <a class="quote-card book-card" href="${result.url}">
         <article class="book-preview-card">
             <header class="book-preview-header">
                 <h1 class="book-preview-title desktop-only">Book Recommendation</h1>
