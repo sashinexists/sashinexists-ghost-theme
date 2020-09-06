@@ -1,0 +1,272 @@
+.books {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+    list-style-type: none;
+    background: darken($eerie-black, 2.5%);
+    border-radius: 1rem;
+}
+
+.books-recommended {
+    @extend .books;
+}
+
+.book {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 20rem;
+    color: inherit;
+    background: lighten($eerie-black, 3%);
+    transition: 0.3s;
+}
+
+.book-full {
+    @extend .post-full;
+}
+
+.book-full-header {
+    @extend .post-full-header;
+    margin-bottom: 2.4rem;
+}
+
+.book-full-title {
+    @extend .post-full-title;
+    color: inherit;
+}
+
+.book-icon {
+    font-size: 2rem;
+}
+
+.book-list-item:nth-of-type(odd) {
+    background: darken($eerie-black, 5%);
+}
+
+.book-list-item:nth-of-type(even) {
+    background: darken($eerie-black, 2.5%);
+}
+
+.book:hover {
+    background: lighten($eerie-black, 5%);
+    color: inherit;
+}
+
+img.book-cover {
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    height: 18rem;
+    width: 20rem;
+}
+
+.book-information {
+    display: block;
+    padding: 3rem;
+    float: right;
+}
+
+.book-title,
+.book-search-title {
+    @extend .post-full-title;
+}
+
+.book-author {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.book-google-info {
+    @extend .read-article;
+    float: right;
+}
+
+.book-search-display {
+    @extend .book;
+    min-height: 0;
+    background: none;
+}
+
+span.book.book-search-result {
+    background: none;
+}
+
+.book-search-display:hover {
+    background: inherit;
+}
+
+//// v2
+
+.books-recommended {
+    @extend .books;
+    width: 80rem;
+    max-width: 100%;
+}
+
+.quote-grid > .book-list-item > .book-information > .book-snippet {
+    display: none;
+}
+
+.quote-grid {
+    li.recommended-results-item:only-child {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        .big-card {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    }
+
+    .book-list-item, .recommended-results-item:not(:only-child) {
+        @extend .quote-card;
+        padding-left: 1rem;
+        &:hover {
+            h3.book-title {
+                color: $platinum;
+            }
+        }
+    }
+
+    .book-list-item:nth-of-type(4n) {
+        background-color: darken($eerie-black, 5%) !important;
+    }
+
+    .book-list-item:nth-of-type(4n-1) {
+        background-color: darken($eerie-black, 2.5%) !important;
+    }
+
+    .book-list-item:nth-of-type(4n-2) {
+        background-color: darken($eerie-black, 2.5%) !important;
+    }
+
+    .book-list-item:nth-of-type(4n-3) {
+        background-color: darken($eerie-black, 5%) !important;
+    }
+
+    .book-list-item.book{
+        &:hover {
+            background-color: lighten($eerie-black, 5%) !important;
+
+        }
+    }
+
+
+    .book-search-title {
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    h3.book-title {
+        font-size: 1.8rem;
+        color: $dark-medium-gray;
+        font-weight: 300;
+    }
+
+    h4.book-author {
+        font-size: 1.4rem;
+        font-weight: 800;
+        margin-top: 1rem;
+    }
+
+    .book-information {
+        width: 100%;
+        text-align: center;
+    }
+
+    .book-snippet {
+        display: none;
+    }
+
+    .book-search-display {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        min-height: 0;
+        max-height: 15rem;
+        transition: none;
+        background: none;
+    }
+
+    .book-search-result {
+        min-height: 0;
+        max-height: 15rem;
+    }
+
+    .load-icon {
+        text-align: center;
+        background: none;
+    }
+
+    .book-preview-header {
+        display: none;
+    }
+
+    img.book-cover {
+        height: 95%;
+        width: 12rem;
+        border-radius: 0.5rem;
+    }
+
+    img.book-search-cover {
+        height: 15rem;
+        width: 15rem;
+        margin: 0;
+    }
+
+    .book-icon {
+        margin: 2rem;
+    }
+
+    .book-google-info {
+        display: none;
+    }
+
+    .recommended-desc {
+        display: none;
+    }
+
+    .device-only {
+        display: inline;
+    }
+
+    .book,.quote-card {
+        background: none;
+    }
+
+    li.recommended-results-item:only-child {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        .big-card {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    }
+}
+
+#search-recommended {
+    background: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .quote-grid {
+        .book-list-item {
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+}

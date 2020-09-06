@@ -1,0 +1,280 @@
+.quote-link {
+    color: inherit;
+}
+
+.quote-link:hover {
+    color: inherit;
+}
+
+.quote {
+    min-height: 30rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    padding: 2rem;
+    background: lighten($eerie-black, 2.5%);
+}
+
+.quotes > .quote  {
+    transition: 0.3s;
+    &:hover {
+        background: lighten($eerie-black, 5%);
+    }
+}
+
+.quote-search-preview {
+    @extend .quote;
+    padding: 0;
+    margin: 0;
+    background: inherit;
+    min-height: inherit;
+    border-radius: 1rem !important;
+}
+
+.quote-search-preview:hover {
+    background: inherit;
+}
+
+.quote-full {
+    @extend .book-full;
+}
+
+.quote-full-header {
+    @extend .book-full-header;
+}
+
+.quote-full-title {
+    @extend .book-full-title;
+}
+
+.quote-content {
+    min-height: 20rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.quote-left {
+    align-self: flex-start;
+}
+
+.quote-right {
+    align-self: flex-end;
+}
+
+.quote-author > a {
+    color: inherit;
+}
+
+.quote-author > a:hover {
+    color: $platinum;
+}
+
+.quote-icon {
+    @extend .book-icon;
+}
+
+.quote-preview {
+    @extend .book-preview;
+    border-radius: 1rem !important;
+    color: inherit;
+}
+
+.quote-preview-link {
+    @extend .book-preview-link;
+    border-radius: 1rem !important;
+}
+
+///
+
+.quote-content-home {
+    font-size: 1.8rem;
+}
+
+.quote-card-preview > .quote-author {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+.quote-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40rem);
+    grid-auto-rows: 20rem;
+    grid-gap: 1rem;
+    max-width: 100%;
+}
+
+.quote-card {
+    @extend .post-preview-link;
+    border-radius: 1rem !important;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.quote-preview {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem !important;
+}
+
+.quote-preview > blockquote {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 2rem;
+    background: none;
+}
+
+.home > .quotes {
+    background-color: $rich-black !important;
+}
+
+.quote-sidebar {
+    padding: 2rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    .quotes-information {
+        padding: 0 1.725rem;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        text-rendering: optimizeLegibility;
+        width: 30rem;
+        p {
+            margin: 2rem 0;
+        }
+    }
+}
+
+.quote-card-preview {
+    @extend .quote-search-preview;
+    border-radius: 1rem !important;
+}
+
+.quote-results-item > a.quote-card {
+    height: 100%;
+}
+
+.quote-card > .quote-card-preview {
+    background: none;
+}
+
+.quote-card.null-result {
+    background-color: darken($eerie-black, 5%) !important;
+    padding: 2rem;
+}
+
+.home > .quotes > .quote-grid {
+    li.quote-results-item:only-child {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        .big-card {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    }
+
+    .quote-card:nth-of-type(4n),
+    li:nth-of-type(4n) > .quote-card:not(:hover) {
+        background-color: $eerie-black;
+        &:hover {
+            background-color: lighten($eerie-black, 5%) !important;
+            color: $platinum;
+        }
+    }
+
+    .quote-card:nth-of-type(4n-1),
+    li:nth-of-type(4n-1) > .quote-card:not(:hover) {
+        background-color: darken($eerie-black, 3%);
+        &:hover {
+            background-color: lighten($eerie-black, 5%) !important;
+            color: $platinum;
+        }
+    }
+
+    .quote-card:nth-of-type(4n-2),
+    li:nth-of-type(4n-2) > .quote-card:not(:hover) {
+        background-color: darken($eerie-black, 3%);
+        &:hover {
+            background-color: lighten($eerie-black, 5%) !important;
+            color: $platinum;
+        }
+    }
+
+    .quote-card:nth-of-type(4n-3),
+    li:nth-of-type(4n-3) > .quote-card:not(:hover) {
+        background-color: $eerie-black;
+        &:hover {
+            background-color: lighten($eerie-black, 5%) !important;
+            color: $platinum;
+        }
+    }
+
+    .quote-card:nth-of-type(4n-3).null-result {
+        background-color: darken($eerie-black, 3%);
+        &:hover {
+            background-color: lighten($eerie-black, 3%);
+        }
+    }
+
+    .quote-card {
+        &:hover {
+            background-color: lighten($eerie-black, 5%) !important;
+            color: $platinum;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .quote-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 40rem);
+        grid-auto-rows: 20rem;
+        grid-gap: 2rem;
+        max-width: 100%;
+    }
+
+    .home > .quotes > .quote-grid {
+        .quote-card:nth-of-type(2n) {
+            background-color: $eerie-black;
+        }
+
+        .quote-card:nth-of-type(2n-1) {
+            background-color: darken($eerie-black, 3%);
+        }
+    }
+
+    .quotes-information {
+        padding: 0 1.725rem;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        text-rendering: optimizeLegibility;
+        width: 40rem;
+        p {
+            margin: 2rem 0;
+        }
+        .search-box {
+            margin-bottom: 2rem;
+        }
+    }
+
+    
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+    .quote-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 35rem);
+        grid-auto-rows: 20rem;
+        grid-gap: 1rem;
+        max-width: 100%;
+    }
+}

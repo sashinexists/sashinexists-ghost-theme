@@ -1,0 +1,107 @@
+{{!< default}}
+
+{{> header}}
+<main class="home">
+    <div class="letters latest device-only">
+        <h3 class="home-title"><a class="home-title-link" href="/letters">Latest Letter</a></h3>
+        {{#get "posts" limit="1" filter="tags:letter"}}
+        {{#foreach posts}}
+        {{> post-preview-home-card}}
+        {{/foreach}}
+        {{/get}}
+        <a href="/letters" class="button-special send-ethereum">
+            <span>
+                <h3>More Letters</h3>
+            </span>
+            <i class="fas fa-file-alt"></i>
+        </a>
+    </div>
+    <div class="letters">
+        <h3 class="home-title"><a class="home-title-link" href="/letters">Letters</a></h3>
+        {{#get "posts" filter="tags:letter"}}
+        {{#foreach posts}}
+        {{> post-preview-home-card}}
+        {{/foreach}}
+        {{/get}}
+        <a href="/letters" class="button-special send-ethereum">
+            <span>
+                <h3>More Letters</h3>
+            </span>
+            <i class="fas fa-file-alt"></i>
+        </a>
+    </div>
+    <div class="articles">
+        <h3 class="home-title"><a class="home-title-link" href="/articles">Articles</a></h3>
+        {{#get "posts" filter="tags:article"}}
+        {{#foreach posts}}
+        {{> post-preview-home-card}}
+        {{/foreach}}
+        {{/get}}
+        <a href="/articles" class="button-special send-ethereum">
+            <span>
+                <h3>More Articles</h3>
+            </span>
+            <i class="fas fa-newspaper"></i>
+        </a>
+    </div>
+    <div class="information">
+        <div class="info-buttons">
+            <a href="/about" class="button-special">
+                <span>
+                    <h3>About</h3>
+                </span>
+                <i class="fas fa-dna"></i>
+            </a>
+            <a href="/subscribe" class="button-special">
+                <span>
+                    <h3>Subscribe</h3>
+                </span>
+                <i class="fas fa-bell-on"></i>
+            </a>
+            <a class="button-special buy-merchandise">
+                <span>
+                    <h3>Merchandise</h3>
+                </span>
+                <i class="fas fa-tshirt"></i>
+            </a>
+            <a href="/support" class="button-special send-ethereum">
+                <span>
+                    <h3>Support me</h3>
+                </span>
+                <i class="fas fa-heart"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="store-popup popup hide">
+
+        <div class="crypto-address-box eth-address-box">
+            <h3>Now Leaving Website</h3>
+            <p>This will open up my Merchandise Store in a new tab.</p>
+            <a href="https://shop.spreadshirt.com/sashinexists" target="_blank"
+                class=" button special copy-text copy-eth-address">
+                <span>
+                    <h3 class="copy-eth-address-label">Go to Store</h3>
+                </span>
+                <i class="fas fa-store copy-eth-icon"></i>
+            </a>
+            <br />
+            <p>Alternatively, pick a quote <a href="/quotes">from here</a> to buy a t-shirt, hoodie or mug with it.</p>
+
+        </div>
+
+        <button class="store-close close-button">
+            <i class="fas fa-window-close"></i>
+        </button>
+    </div>
+
+    <div class="leave-store screen hide">
+
+    </div>
+
+
+
+
+</main>
+
+<script type="text/javascript" src="{{asset "js/home.js"}}"></script>

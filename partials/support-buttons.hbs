@@ -1,0 +1,75 @@
+<div class="buttons-box-inline">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="S78PYA8MLNZEN">
+        <button class="button-special paypal-support" type="submit">
+            <h3>Donate with Paypal</h3>
+            <i class=" fab fa-paypal"></i>
+        </button>
+    </form>
+    <a href="https://www.patreon.com/sashinexists" class="button-special patreon-support">
+        <span>
+            <h3>Become a Patron</h3>
+        </span>
+        <i class="fab fa-patreon"></i>
+    </a>
+    <a href="https://ko-fi.com/sashinexists" class="button-special kofi-support">
+        <span>
+            <h3>Tip me with Ko-fi</h3>
+        </span>
+        <i class="fas fa-mug-hot"></i>
+    </a>
+    <a class="button-special send-bitcoin">
+        <span>
+            <h3>Send me Bitcoin</h3>
+        </span>
+        <i class="fab fa-bitcoin"></i>
+    </a>
+    <a class="button-special send-ethereum">
+        <span>
+            <h3>Send me Ethereum</h3>
+        </span>
+        <i class="fab fa-ethereum"></i>
+    </a>
+    <a href="https://shop.spreadshirt.com/sashinexists" class="button-special buy-merchandise">
+        <span>
+            <h3>Buy Merchandise</h3>
+        </span>
+        <i class="fas fa-tshirt"></i>
+    </a>
+</div>
+
+<div class="popup hide">
+
+    <div class="crypto-address-box eth-address-box hide">
+        <h3>My Ethereum address</h3>
+        <input type="text" value="0x29B6F575484b645E170c0692123609Ff37202c84" id="eth-address"
+            class="crypt-address copy-from">
+        <button class=" button special copy-text copy-eth-address">
+            <span>
+                <h3 class="copy-eth-address-label">Copy address</h3>
+            </span>
+            <i class="fas fa-copy copy-eth-icon"></i>
+        </button>
+    </div>
+
+    <div class="crypto-address-box btc-address-box hide">
+        <h3>My Bitcoin address</h3>
+        <input type="text" value="1CUSTxSNro7PhAJi11aCp7jK88VC2kNt6a" id="btc-address" class="crypt-address copy-from">
+        <button class="button-special copy-text copy-btc-address">
+            <span>
+                <h3 class="copy-btc-address-label">Copy address</h3>
+            </span>
+            <i class="fas fa-copy copy-btc-icon"></i>
+        </button>
+    </div>
+    <button class="close-button">
+        <i class="fas fa-window-close"></i>
+    </button>
+</div>
+
+<div class="screen hide">
+
+</div>
+
+<script type="text/javascript" src="{{asset "js/support-buttons.js"}}"></script>

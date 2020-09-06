@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400");
+
+$rich-black: #030303; // for body background colour
+$eerie-black: #171717; // for article background colour
+$charleston-green: #2c2c2c; //for article background rollover
+
+$dark-medium-gray: #aaa; // for main body text throughout website
+$platinum: #e9e9e9; // for titles
+
+$middle-green: #52aa5e; // for the main heading and links
+$turquoise-green: #a0d0a7; // for links in their hover state
+
+$amaranth: #ef2d56; // just for the support heart in its hoverstate
+
+$facebook-blue: #6d84b4; // for Facebook button rollover
+$twitter-blue: #55acee;
+
+@import "partials/_nav";
+@import "partials/_post";
+@import "partials/_preview";
+@import "partials/_books";
+@import "partials/_talks";
+@import "partials/_quotes";
+@import "partials/_comments";
+@import "partials/_popups";
+@import "partials/_bookmarks";
+@import "partials/_subscribe";
+@import "partials/_twitter";
+@import "partials/_home.scss";
+
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: $rich-black;
+    color: $dark-medium-gray;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-align: justify;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    font-weight: 300;
+    font-size: 3.6rem;
+    color: $middle-green;
+}
+
+.main-title-device {
+    @extend .main-title;
+    display: none;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 2.4rem;
+}
+
+h6 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+a {
+    color: $middle-green;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+        color: $turquoise-green;
+    }
+}
+
+button {
+    transition: 0.3s;
+}
+
+.main-site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+}
+
+// Following few classes (.private-suffix and .gh-prefix classes) apply to the private.hbs page
+.main-site-header-private {
+    @extend .main-site-header;
+    justify-content: center;
+}
+
+.request-private {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main {
+    max-width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.search-bar {
+    font-size: 2rem;
+    background: darken($eerie-black, 2.5%);
+    color: $platinum;
+    font-weight: 300;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    height: 100%;
+    width: 25rem;
+}
+
+.support-button {
+    position: fixed;
+    bottom: 2rem;
+    left: 1rem;
+    cursor: pointer;
+}
+
+.support-icon {
+    color: lighten($eerie-black, 5%);
+    transition: 0.3s;
+
+    &:hover {
+        color: $amaranth;
+    }
+}
+
+.back-to-top-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.back-to-top-icon {
+    color: lighten($eerie-black, 25%);
+    transition: 0.3s;
+
+    &:hover {
+        color: $platinum;
+    }
+}
+
+.pay-icon,
+.contact-icon {
+    font-size: 4rem;
+    color: $dark-medium-gray;
+    transition: 0.3s;
+
+    &:hover {
+        color: $platinum;
+    }
+}
+
+.pay-button,
+.contact-button {
+    display: block;
+    margin: auto;
+    padding: 4rem;
+    border: none;
+    border-radius: 1rem;
+    transition: 0.3s;
+    background: lighten($eerie-black, 2.5%);
+
+    &:hover {
+        background: lighten($eerie-black, 5%);
+    }
+}
+
+.load-icon {
+    @extend h3;
+    margin: auto;
+    animation: spin 4s infinite linear;
+}
+
+.device-only {
+    display: none;
+}
+
+.kg-width-full,
+.kg-width-wide,
+.kg-gallery-container,
+.kg-gallery-row,
+.kg-gallery-image {
+    color: inherit;
+}
+
+.kg-image-card,
+.kg-image,
+.kg-embed-card {
+    color: inherit;
+}
+
+.buttons-box {
+    margin-top: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons-box-inline {
+    @extend .buttons-box;
+    margin-top: 1rem;
+}
+
+.button-special {
+    @extend .read-article;
+    padding: 3rem;
+    margin: 1rem;
+    background: lighten($eerie-black, 4%);
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: lighten($eerie-black, 8%);
+        color: $platinum;
+        -webkit-box-shadow: 0px 10px 27px -9px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0px 10px 27px -9px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 10px 27px -9px rgba(0, 0, 0, 0.6);
+    }
+}
+
+.text-align-left {
+    text-align: left !important;
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+#search-results, #quote-results, #recommended-results {
+    list-style: none;
+}
+
+#stay-determined {
+    transition: 0.3s;
+    &:hover {
+        background: lighten($eerie-black, 5%);
+        color: $platinum;
+        .flame-of-determination {
+            color: $amaranth;
+        }
+    }
+}
+
+.search-box {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: $eerie-black;
+    border-radius:1rem;
+    padding-right: 2rem;
+}
+
+#search-quotes.search-bar, #search-recommended.search-bar {
+    background: $eerie-black;
+    font-size: inherit;
+    font-weight: inherit;
+    width: 20rem;
+
+}
+
+.flame-of-determination {
+    transition: 0.3s;
+}
+
+section.post-full.big-card.no-search-results {
+    margin:0;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@import "partials/_media-queries";

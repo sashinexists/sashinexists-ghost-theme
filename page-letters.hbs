@@ -1,0 +1,37 @@
+{{!< default}}
+
+{{> header}}
+
+<main>
+
+    <article class="post-full">
+
+        <header class="post-full-header">
+            <h1 class="post-full-title"><a href={{url}}>Past Letters</a></h1>
+            <i class="fas fa-envelope-open-text book-icon"></i>
+        </header>
+
+        <section class="post-full-content">
+            <div class="post-content">
+                <p>This is an archive of letters I have sent out to the mailing list.</p>
+                <div class="buttons-box">
+                    <a href="https://www.sashinexists.com/subscribe" class="button-special subcribe-to-emails">
+                        <span>
+                            <p>Subscribe to receive these emails in your inbox</p>
+                        </span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </article>
+    {{#get "posts" limit="all" include="tags"}}
+    {{#foreach posts}}
+    {{#has tag="Letter"}}
+    {{> letter-preview}}
+    {{/has}}
+    {{/foreach}}
+    {{/get}}
+</main>
+<script>RENDER_SEARCH();</script>

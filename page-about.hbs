@@ -1,0 +1,54 @@
+{{!< default }}
+{{> header}}
+
+{{#post}}
+<main>
+
+    <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+
+        <header class="post-full-header">
+            <h1 class="post-full-title"><a href={{url}}>{{title}}</a></h1>
+        </header>
+        {{#if feature_image}}
+        <figure class="post-full-image" style="background-image: url({{feature_image}})">
+        </figure>
+        {{/if}}
+
+        <section class="post-full-content">
+            <div class="post-content">
+                <p>My name is Sashin and I exist. There are things I would like to say, and this is a place for me to
+                    say them.</p>
+                <div class="buttons-box-inline">
+                    <a href="mailto://hello@sashinexists.com" class="button-special send-email">
+                        <span>
+                            <h3>Send me an email</h3>
+                        </span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                    <a href="https://ghostboard.io/public/5c4fbc8cd52bc52e26c61702" class="button-special send-bitcoin">
+                        <span>
+                            <h3>See my analytics</h3>
+                        </span>
+                        <i class="fas fa-chart-bar"></i>
+                    </a>
+                    <a href="https://discord.gg/hy8397S" class="button-special discord-join">
+                        <span>
+                            <h3>Talk to me on Discord</h3>
+                        </span>
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="/support" class="button-special send-ethereum">
+                        <span>
+                            <h3>Support me</h3>
+                        </span>
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+                <hr>
+                {{content}}
+            </div>
+        </section>
+
+    </article>
+</main>
+{{/post}}

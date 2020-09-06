@@ -1,0 +1,80 @@
+.talk {
+    min-height: 30rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    padding: 0rem;
+    background: darken($eerie-black, 2.5%);
+}
+
+.talk-title {
+    margin-bottom: 2rem;
+    color: $dark-medium-gray;
+}
+
+.talk > .kg-embed-card {
+    margin:0;
+}
+
+.talk-full {
+    @extend .book-full;
+}
+
+.talk-full-header {
+    @extend .book-full-header;
+}
+
+.talk-full-title {
+    @extend .book-full-title;
+}
+
+.talk-icon {
+    font-size: 2rem;
+}
+
+.talk-list-item:nth-of-type(odd) {
+    background: darken($eerie-black, 5%);
+
+}
+
+.talk-list-item:nth-of-type(even) {
+    background: darken($eerie-black, 2.5%);
+}
+
+img.talk-cover{
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    height: 18rem;
+    width: 20rem;
+}
+
+.talk-information {
+    display: block;
+    padding: 3rem;
+    float: right;
+}
+
+.talk-title, .talk-search-title {
+    @extend .post-full-title
+}
+
+.talk-author {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.talk-search-display {
+    @extend .talk;
+    min-height: 0;
+    background:none;
+}
+
+span.talk.talk-search-result{
+    background: none;
+}
+
+.talk-search-display:hover {
+    background: inherit;
+}

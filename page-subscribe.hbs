@@ -1,0 +1,74 @@
+{{!< default}}
+
+{{> header}}
+<main>
+    <article class="post-full">
+        <header class="post-full-header">
+            <h1 class="post-full-title"><a href={{url}}>Subscribe</a></h1>
+        </header>
+        {{^if success}}
+        <div class="subscribe-box">
+
+            {{> subscribe_form}}
+
+        </div>
+        {{else}}
+        <div class="subscribe-box">
+            <header>
+                <h3>Subscribed.</h3>
+            </header>
+
+            <p>
+                You've successfully subscribed </em>
+                with the email address <em>{{email}}</em>.
+            </p>
+            <p>
+                Thank you very much for subscribing, looking forward to writing to you soon.
+            </p>
+        </div>
+        {{/if}}
+        <section class="post-full-content">
+            <div class="post-content">
+                <p>You know how at the end of a conversation, it's normal to feel like you had more to say?</p>
+                <p>I feel like that all the time.</p>
+                <p>Please subscribe and allow me to send you a weekly email with what I have been thinking about that
+                    week.</p>
+                <p>You will also receive updates whenever I have a new piece written up on the site.</p>
+                <div class="buttons-box-inline">
+                    <a class="button-special" href="/letters">
+                        <h3>Read past letters here</h3>
+                        <i class="fas fa-envelope-open"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        </div>
+        <section class="post-full-content">
+            <div class="post-content">
+                <hr>
+                <p>In case you clicked the envelope icon wanting to email me, <a href="mailto:hello@sashinexists.com">
+                        click here</a>.</p>
+            </div>
+        </section>
+    </article>
+</main>
+
+<div class="popup hide">
+
+    <div class="crypto-address-box eth-address-box">
+        <h3>Please check your inbox in the next ten minutes!</h3>
+        <h3>
+            <i class="fas fa-clock copy-eth-icon"></i>
+        </h3>
+        <span>Click the magic link there to finish the sign up process.</span>
+    </div>
+    <button class="close-button">
+        <i class="fas fa-window-close"></i>
+    </button>
+</div>
+
+<div class="screen hide">
+
+</div>
+
+<script type="text/javascript" src="{{asset "js/subscribe-form.js"}}"></script>

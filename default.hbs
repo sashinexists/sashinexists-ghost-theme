@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{meta_title}}</title>
+    {{> api-keys}}
+    <script src="https://kit.fontawesome.com/66d2ee01d0.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{asset "js/books.js"}}"></script>
+    <link rel="stylesheet" href={{asset "built/style.css"}} />
+    {{ghost_head}}
+</head>
+
+<body>
+    {{{body}}}
+    <ul class="support-button nav-list desktop-only">
+        <li class="nav-list-item"><a class="nav-link" title="Thank you" href="/support"><i
+                    class="support-icon nav-icon fas fa-heart"></i></a></li>
+    </ul>
+    <ul class="back-to-top-button nav-list">
+        <li class="nav-list-item"><a class="nav-link" title="Back to top"><i
+                    class="back-to-top-icon nav-icon fas fa-chevron-circle-up"></i></i></a></li>
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/searchinghost@1.6.0/dist/searchinghost.min.js"></script>
+    <script type="text/javascript" src="{{asset "js/script.js"}}"></script>
+    {{ghost_foot}}
+</body>
+
+</html>

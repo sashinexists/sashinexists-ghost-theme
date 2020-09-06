@@ -1,0 +1,44 @@
+<button class="comments-open">
+    <span>
+        <h3>View Discussion</h3>
+    </span>
+    <i class="fas fa-comment"></i>
+</button>
+
+
+<section class="comments-full hide">
+    <header class="comments-full-header">
+        <h1 class="comments-full-title">Discussion</h1>
+        <i class="fas fa-comment comment-icon"></i>
+    </header>
+    <section class="comments-full-content">
+        <div id="commento"></div>
+        <script defer src="https://cdn.commento.io/js/commento.js" data-no-fonts="true">
+        </script>
+    </section>
+</section>
+
+<button class="comments-close hide">
+    <span>
+        <h3>Hide Discussion</h3>
+    </span>
+    <i class="fas fa-comment-slash"></i>
+</button>
+
+<script>
+    const SHOW_COMMENTS = document.querySelector(".comments-open");
+    const HIDE_COMMENTS = document.querySelector(".comments-close");
+    const COMMENTS = document.querySelector(".comments-full");
+    SHOW_COMMENTS.addEventListener("click", showComments);
+    HIDE_COMMENTS.addEventListener("click", hideComments);
+    function showComments() {
+        SHOW_COMMENTS.classList.add("hide");
+        COMMENTS.classList.remove("hide");
+        HIDE_COMMENTS.classList.remove("hide");
+    }
+    function hideComments() {
+        SHOW_COMMENTS.classList.remove("hide");
+        COMMENTS.classList.add("hide");
+        HIDE_COMMENTS.classList.add("hide");
+    }
+</script>

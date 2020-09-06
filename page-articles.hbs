@@ -1,0 +1,11 @@
+{{!< default}}
+
+{{> header}}
+
+<main>
+    {{#get "posts" filter="tags:article"}}
+    {{#foreach posts}}
+    {{> post-preview}}
+    {{/foreach}}
+    {{/get}}
+</main>

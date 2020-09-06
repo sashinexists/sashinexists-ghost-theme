@@ -1,0 +1,1594 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400");
+.main-navigation {
+  display: flex;
+  align-items: center; }
+
+.nav-list, .nav {
+  list-style: none;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.nav-list-item, .nav > li {
+  display: inline-block;
+  padding: 0 2rem; }
+
+.nav-link, .nav > li > a, .nav > li > .post-preview-title, .nav > li > .book-preview-title {
+  color: #aaa; }
+  .nav-link:hover, .nav > li > a:hover, .nav > li > .post-preview-title:hover, .nav > li > .book-preview-title:hover {
+    color: #e9e9e9; }
+
+.twitter-button > .nav-icon {
+  transition: .3s; }
+  .twitter-button > .nav-icon:hover {
+    color: #55acee; }
+
+.facebook-button > .nav-icon {
+  transition: .3s; }
+  .facebook-button > .nav-icon:hover {
+    color: #6d84b4; }
+
+.nav-icon {
+  font-size: 2.4rem; }
+
+.menu-button {
+  display: none; }
+
+.device-nav {
+  display: none; }
+
+.post-full, .post-preview, .book-preview, .quote-preview, .book-full, .talk-full, .quote-full, .comments-full {
+  margin: 3rem 0 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 76.8rem;
+  max-width: 100%;
+  background: #171717;
+  padding: 5rem;
+  border-radius: 1rem; }
+  .post-full ol, .post-preview ol, .book-preview ol, .quote-preview ol, .book-full ol, .talk-full ol, .quote-full ol, .comments-full ol,
+  .post-full ul,
+  .post-preview ul,
+  .book-preview ul,
+  .quote-preview ul,
+  .book-full ul,
+  .talk-full ul,
+  .quote-full ul,
+  .comments-full ul {
+    margin-left: 4rem; }
+    .post-full ol li, .post-preview ol li, .book-preview ol li, .quote-preview ol li, .book-full ol li, .talk-full ol li, .quote-full ol li, .comments-full ol li,
+    .post-full ul li,
+    .post-preview ul li,
+    .book-preview ul li,
+    .quote-preview ul li,
+    .book-full ul li,
+    .talk-full ul li,
+    .quote-full ul li,
+    .comments-full ul li {
+      padding: .5rem 0;
+      font-size: 1.7rem;
+      line-height: 2.4rem;
+      text-rendering: optimizeLegibility; }
+  .post-full .footnotes-list, .post-preview .footnotes-list, .book-preview .footnotes-list, .quote-preview .footnotes-list, .book-full .footnotes-list, .talk-full .footnotes-list, .quote-full .footnotes-list, .comments-full .footnotes-list {
+    font-size: 1.4rem;
+    margin: 4rem; }
+    .post-full .footnotes-list .footnote-item, .post-preview .footnotes-list .footnote-item, .book-preview .footnotes-list .footnote-item, .quote-preview .footnotes-list .footnote-item, .book-full .footnotes-list .footnote-item, .talk-full .footnotes-list .footnote-item, .quote-full .footnotes-list .footnote-item, .comments-full .footnotes-list .footnote-item {
+      font-size: 1.4rem; }
+      .post-full .footnotes-list .footnote-item p, .post-preview .footnotes-list .footnote-item p, .book-preview .footnotes-list .footnote-item p, .quote-preview .footnotes-list .footnote-item p, .book-full .footnotes-list .footnote-item p, .talk-full .footnotes-list .footnote-item p, .quote-full .footnotes-list .footnote-item p, .comments-full .footnotes-list .footnote-item p {
+        font-size: 1.4rem; }
+  .post-full p, .post-preview p, .book-preview p, .quote-preview p, .book-full p, .talk-full p, .quote-full p, .comments-full p {
+    padding: 1.725rem 0;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    text-rendering: optimizeLegibility; }
+  .post-full blockquote, .post-preview blockquote, .book-preview blockquote, .quote-preview blockquote, .book-full blockquote, .talk-full blockquote, .quote-full blockquote, .comments-full blockquote {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.4rem;
+    font-weight: 300; }
+    .post-full blockquote p, .post-preview blockquote p, .book-preview blockquote p, .quote-preview blockquote p, .book-full blockquote p, .talk-full blockquote p, .quote-full blockquote p, .comments-full blockquote p {
+      font-size: inherit;
+      line-height: 3.6rem; }
+      .post-full blockquote p .longquote, .post-preview blockquote p .longquote, .book-preview blockquote p .longquote, .quote-preview blockquote p .longquote, .book-full blockquote p .longquote, .talk-full blockquote p .longquote, .quote-full blockquote p .longquote, .comments-full blockquote p .longquote {
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1rem; }
+  .post-full .longquote, .post-preview .longquote, .book-preview .longquote, .quote-preview .longquote, .book-full .longquote, .talk-full .longquote, .quote-full .longquote, .comments-full .longquote {
+    font-size: 1.8rem;
+    font-weight: 300; }
+    .post-full .longquote p, .post-preview .longquote p, .book-preview .longquote p, .quote-preview .longquote p, .book-full .longquote p, .talk-full .longquote p, .quote-full .longquote p, .comments-full .longquote p {
+      font-size: inherit;
+      text-align: left; }
+  .post-full hr, .post-preview hr, .book-preview hr, .quote-preview hr, .book-full hr, .talk-full hr, .quote-full hr, .comments-full hr {
+    border: none;
+    text-align: center;
+    font-weight: 300;
+    margin: 2.4rem 0; }
+    .post-full hr::after, .post-preview hr::after, .book-preview hr::after, .quote-preview hr::after, .book-full hr::after, .talk-full hr::after, .quote-full hr::after, .comments-full hr::after {
+      content: "~";
+      text-align: center;
+      font-size: 3.6rem; }
+  .post-full .dictionary-definition, .post-preview .dictionary-definition, .book-preview .dictionary-definition, .quote-preview .dictionary-definition, .book-full .dictionary-definition, .talk-full .dictionary-definition, .quote-full .dictionary-definition, .comments-full .dictionary-definition {
+    margin: 4rem; }
+    .post-full .dictionary-definition dl, .post-preview .dictionary-definition dl, .book-preview .dictionary-definition dl, .quote-preview .dictionary-definition dl, .book-full .dictionary-definition dl, .talk-full .dictionary-definition dl, .quote-full .dictionary-definition dl, .comments-full .dictionary-definition dl {
+      background: #262626;
+      border-radius: 1rem;
+      padding: 2rem;
+      width: 70%;
+      font-size: 1.4rem;
+      margin: auto;
+      color: #aaa;
+      transition: .3s; }
+      .post-full .dictionary-definition dl:hover, .post-preview .dictionary-definition dl:hover, .book-preview .dictionary-definition dl:hover, .quote-preview .dictionary-definition dl:hover, .book-full .dictionary-definition dl:hover, .talk-full .dictionary-definition dl:hover, .quote-full .dictionary-definition dl:hover, .comments-full .dictionary-definition dl:hover {
+        background: #2c2c2c;
+        color: #e9e9e9; }
+      .post-full .dictionary-definition dl dt, .post-preview .dictionary-definition dl dt, .book-preview .dictionary-definition dl dt, .quote-preview .dictionary-definition dl dt, .book-full .dictionary-definition dl dt, .talk-full .dictionary-definition dl dt, .quote-full .dictionary-definition dl dt, .comments-full .dictionary-definition dl dt {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem; }
+  .post-full .float-center, .post-preview .float-center, .book-preview .float-center, .quote-preview .float-center, .book-full .float-center, .talk-full .float-center, .quote-full .float-center, .comments-full .float-center {
+    width: 100%;
+    text-align: center; }
+  .post-full img, .post-preview img, .book-preview img, .quote-preview img, .book-full img, .talk-full img, .quote-full img, .comments-full img, .post-full iframe, .post-preview iframe, .book-preview iframe, .quote-preview iframe, .book-full iframe, .talk-full iframe, .quote-full iframe, .comments-full iframe {
+    margin: 3rem;
+    border-radius: 1rem; }
+  .post-full blockquote.dialogue-left, .post-preview blockquote.dialogue-left, .book-preview blockquote.dialogue-left, .quote-preview blockquote.dialogue-left, .book-full blockquote.dialogue-left, .talk-full blockquote.dialogue-left, .quote-full blockquote.dialogue-left, .comments-full blockquote.dialogue-left {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: left; }
+  .post-full blockquote.dialogue-right, .post-preview blockquote.dialogue-right, .book-preview blockquote.dialogue-right, .quote-preview blockquote.dialogue-right, .book-full blockquote.dialogue-right, .talk-full blockquote.dialogue-right, .quote-full blockquote.dialogue-right, .comments-full blockquote.dialogue-right {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: right; }
+
+.post-full-title, .post-preview-title, .book-preview-title, .book-full-title, .talk-full-title, .quote-full-title, .book-title,
+.book-search-title, .talk-title, .talk-search-title, .comments-full-title {
+  color: #e9e9e9;
+  font-size: 2.4rem;
+  font-weight: 300; }
+
+.post-full-meta, .post-preview-meta {
+  text-align: right;
+  font-size: 1.4rem; }
+
+.post-full-image, .post-preview-image {
+  height: 15rem;
+  width: 75rem;
+  max-width: 100%;
+  max-height: 100%;
+  background: var(--lightgrey) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  margin: 1rem 0 2rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  cursor: pointer;
+  transition: .3s; }
+  .post-full-image .image-details, .post-preview-image .image-details {
+    font-family: "Ubuntu", sans-serif;
+    color: #aaa;
+    display: block;
+    font-size: 1.5rem;
+    align-self: flex-end;
+    padding: .8rem;
+    text-align: center;
+    background: #030303;
+    border-radius: 2rem;
+    margin: .5rem;
+    border: none;
+    opacity: .3;
+    cursor: pointer;
+    transition: .3s; }
+    .post-full-image .image-details span, .post-preview-image .image-details span {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      margin-left: .5rem;
+      display: none; }
+    .post-full-image .image-details i, .post-preview-image .image-details i {
+      margin: 0 .5rem; }
+  .post-full-image:hover, .post-preview-image:hover {
+    background-color: #171717; }
+    .post-full-image:hover .image-details, .post-preview-image:hover .image-details {
+      opacity: .8; }
+      .post-full-image:hover .image-details span, .post-preview-image:hover .image-details span {
+        display: inline; }
+      .post-full-image:hover .image-details:hover, .post-preview-image:hover .image-details:hover {
+        opacity: .9;
+        color: #e9e9e9; }
+
+.post-content,
+.post-full-content,
+.comments-full-content {
+  width: 100%; }
+
+.post-preview, .book-preview, .quote-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: .3s; }
+  .post-preview:hover, .book-preview:hover, .quote-preview:hover {
+    background: #1d1d1d; }
+
+.post-excerpt {
+  width: 100%;
+  margin: 0; }
+
+.post-preview-ellipsis {
+  font-size: 3rem;
+  text-align: center;
+  width: 100%; }
+
+.read-article, .book-google-info, .comments-open, .comments-close, #commento-submit-button-root, .commento-submit-button, .commento-button, .button-special, .copy-text {
+  color: inherit;
+  background: rgba(74, 74, 74, 0.3);
+  border: none;
+  border-radius: 1rem;
+  padding: 1.3rem;
+  font-size: 1.4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: .3s; }
+  .read-article i, .book-google-info i, .comments-open i, .comments-close i, #commento-submit-button-root i, .commento-submit-button i, .commento-button i, .button-special i, .copy-text i {
+    margin-left: 2rem;
+    font-size: 2.4rem; }
+  .read-article:hover, .book-google-info:hover, .comments-open:hover, .comments-close:hover, #commento-submit-button-root:hover, .commento-submit-button:hover, .commento-button:hover, .button-special:hover, .copy-text:hover {
+    background: rgba(74, 74, 74, 0.6);
+    color: #e9e9e9; }
+
+.post-preview-link, .book-preview-link, .quote-preview-link, .quote-card, .quote-grid .book-list-item, .quote-grid .recommended-results-item:not(:only-child) {
+  color: inherit;
+  transition: .3s; }
+  .post-preview-link:hover, .book-preview-link:hover, .quote-preview-link:hover, .quote-card:hover, .quote-grid .book-list-item:hover, .quote-grid .recommended-results-item:hover:not(:only-child) {
+    color: inherit; }
+
+.post-preview-footer, .book-preview-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+.books, .books-recommended {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  list-style-type: none;
+  background: #111111;
+  border-radius: 1rem; }
+
+.book, .book-search-display {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 20rem;
+  color: inherit;
+  background: #1f1f1f;
+  transition: 0.3s; }
+
+.book-full-header, .talk-full-header, .quote-full-header {
+  margin-bottom: 2.4rem; }
+
+.book-full-title, .talk-full-title, .quote-full-title {
+  color: inherit; }
+
+.book-icon, .quote-icon {
+  font-size: 2rem; }
+
+.book-list-item:nth-of-type(odd) {
+  background: #0a0a0a; }
+
+.book-list-item:nth-of-type(even) {
+  background: #111111; }
+
+.book:hover, .book-search-display:hover {
+  background: #242424;
+  color: inherit; }
+
+img.book-cover, .post-full iframe.book-cover, .post-preview iframe.book-cover, .book-preview iframe.book-cover, .quote-preview iframe.book-cover, .book-full iframe.book-cover, .talk-full iframe.book-cover, .quote-full iframe.book-cover, .comments-full iframe.book-cover {
+  display: block;
+  margin: 0;
+  border-radius: 0;
+  height: 18rem;
+  width: 20rem; }
+
+.book-information {
+  display: block;
+  padding: 3rem;
+  float: right; }
+
+.book-author {
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+.book-google-info {
+  float: right; }
+
+.book-search-display {
+  min-height: 0;
+  background: none; }
+
+span.book.book-search-result, span.book-search-result.book-search-display {
+  background: none; }
+
+.book-search-display:hover {
+  background: inherit; }
+
+.books-recommended {
+  width: 80rem;
+  max-width: 100%; }
+
+.quote-grid > .book-list-item > .book-information > .book-snippet {
+  display: none; }
+
+.quote-grid li.recommended-results-item:only-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2; }
+  .quote-grid li.recommended-results-item:only-child .big-card {
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+.quote-grid .book-list-item, .quote-grid .recommended-results-item:not(:only-child) {
+  padding-left: 1rem; }
+  .quote-grid .book-list-item:hover h3.book-title, .quote-grid .book-list-item:hover .post-full .dictionary-definition dl dt.book-title, .post-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .post-preview .dictionary-definition dl dt.book-title, .post-preview .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .book-preview .dictionary-definition dl dt.book-title, .book-preview .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .quote-preview .dictionary-definition dl dt.book-title, .quote-preview .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .book-full .dictionary-definition dl dt.book-title, .book-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .talk-full .dictionary-definition dl dt.book-title, .talk-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .quote-full .dictionary-definition dl dt.book-title, .quote-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .comments-full .dictionary-definition dl dt.book-title, .comments-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .book-title.kg-bookmark-title, .quote-grid .book-list-item:hover .book-title.load-icon, .quote-grid .recommended-results-item:not(:only-child):hover h3.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .post-full .dictionary-definition dl dt.book-title, .post-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .post-preview .dictionary-definition dl dt.book-title, .post-preview .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .book-preview .dictionary-definition dl dt.book-title, .book-preview .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .quote-preview .dictionary-definition dl dt.book-title, .quote-preview .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .book-full .dictionary-definition dl dt.book-title, .book-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .talk-full .dictionary-definition dl dt.book-title, .talk-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .quote-full .dictionary-definition dl dt.book-title, .quote-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .comments-full .dictionary-definition dl dt.book-title, .comments-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .book-title.kg-bookmark-title, .quote-grid .recommended-results-item:not(:only-child):hover .book-title.load-icon {
+    color: #e9e9e9; }
+.quote-grid .book-list-item:nth-of-type(4n) {
+  background-color: #0a0a0a !important; }
+.quote-grid .book-list-item:nth-of-type(4n-1) {
+  background-color: #111111 !important; }
+.quote-grid .book-list-item:nth-of-type(4n-2) {
+  background-color: #111111 !important; }
+.quote-grid .book-list-item:nth-of-type(4n-3) {
+  background-color: #0a0a0a !important; }
+.quote-grid .book-list-item.book:hover, .quote-grid .book-list-item.book-search-display:hover {
+  background-color: #242424 !important; }
+.quote-grid .book-search-title {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 300; }
+.quote-grid h3.book-title, .quote-grid .post-full .dictionary-definition dl dt.book-title, .post-full .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .post-preview .dictionary-definition dl dt.book-title, .post-preview .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .book-preview .dictionary-definition dl dt.book-title, .book-preview .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .quote-preview .dictionary-definition dl dt.book-title, .quote-preview .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .book-full .dictionary-definition dl dt.book-title, .book-full .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .talk-full .dictionary-definition dl dt.book-title, .talk-full .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .quote-full .dictionary-definition dl dt.book-title, .quote-full .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .comments-full .dictionary-definition dl dt.book-title, .comments-full .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .book-title.kg-bookmark-title, .quote-grid .book-title.load-icon {
+  font-size: 1.8rem;
+  color: #aaa;
+  font-weight: 300; }
+.quote-grid h4.book-author {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-top: 1rem; }
+.quote-grid .book-information {
+  width: 100%;
+  text-align: center; }
+.quote-grid .book-snippet {
+  display: none; }
+.quote-grid .book-search-display {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  min-height: 0;
+  max-height: 15rem;
+  transition: none;
+  background: none; }
+.quote-grid .book-search-result {
+  min-height: 0;
+  max-height: 15rem; }
+.quote-grid .load-icon {
+  text-align: center;
+  background: none; }
+.quote-grid .book-preview-header {
+  display: none; }
+.quote-grid img.book-cover, .quote-grid .post-full iframe.book-cover, .post-full .quote-grid iframe.book-cover, .quote-grid .post-preview iframe.book-cover, .post-preview .quote-grid iframe.book-cover, .quote-grid .book-preview iframe.book-cover, .book-preview .quote-grid iframe.book-cover, .quote-grid .quote-preview iframe.book-cover, .quote-preview .quote-grid iframe.book-cover, .quote-grid .book-full iframe.book-cover, .book-full .quote-grid iframe.book-cover, .quote-grid .talk-full iframe.book-cover, .talk-full .quote-grid iframe.book-cover, .quote-grid .quote-full iframe.book-cover, .quote-full .quote-grid iframe.book-cover, .quote-grid .comments-full iframe.book-cover, .comments-full .quote-grid iframe.book-cover {
+  height: 95%;
+  width: 12rem;
+  border-radius: 0.5rem; }
+.quote-grid img.book-search-cover, .quote-grid .post-full iframe.book-search-cover, .post-full .quote-grid iframe.book-search-cover, .quote-grid .post-preview iframe.book-search-cover, .post-preview .quote-grid iframe.book-search-cover, .quote-grid .book-preview iframe.book-search-cover, .book-preview .quote-grid iframe.book-search-cover, .quote-grid .quote-preview iframe.book-search-cover, .quote-preview .quote-grid iframe.book-search-cover, .quote-grid .book-full iframe.book-search-cover, .book-full .quote-grid iframe.book-search-cover, .quote-grid .talk-full iframe.book-search-cover, .talk-full .quote-grid iframe.book-search-cover, .quote-grid .quote-full iframe.book-search-cover, .quote-full .quote-grid iframe.book-search-cover, .quote-grid .comments-full iframe.book-search-cover, .comments-full .quote-grid iframe.book-search-cover {
+  height: 15rem;
+  width: 15rem;
+  margin: 0; }
+.quote-grid .book-icon, .quote-grid .quote-icon {
+  margin: 2rem; }
+.quote-grid .book-google-info {
+  display: none; }
+.quote-grid .recommended-desc {
+  display: none; }
+.quote-grid .device-only {
+  display: inline; }
+.quote-grid .book, .quote-grid .book-search-display, .quote-grid .quote-card, .quote-grid .book-list-item, .quote-grid .recommended-results-item:not(:only-child) {
+  background: none; }
+.quote-grid li.recommended-results-item:only-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2; }
+  .quote-grid li.recommended-results-item:only-child .big-card {
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+
+#search-recommended {
+  background: none; }
+
+@media only screen and (max-width: 700px) {
+  .quote-grid .book-list-item {
+    margin: 0;
+    border-radius: 0; } }
+.talk, .talk-search-display {
+  min-height: 30rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  border-radius: 1rem;
+  padding: 0rem;
+  background: #111111; }
+
+.talk-title {
+  margin-bottom: 2rem;
+  color: #aaa; }
+
+.talk > .kg-embed-card, .talk-search-display > .kg-embed-card {
+  margin: 0; }
+
+.talk-icon {
+  font-size: 2rem; }
+
+.talk-list-item:nth-of-type(odd) {
+  background: #0a0a0a; }
+
+.talk-list-item:nth-of-type(even) {
+  background: #111111; }
+
+img.talk-cover, .post-full iframe.talk-cover, .post-preview iframe.talk-cover, .book-preview iframe.talk-cover, .quote-preview iframe.talk-cover, .book-full iframe.talk-cover, .talk-full iframe.talk-cover, .quote-full iframe.talk-cover, .comments-full iframe.talk-cover {
+  display: block;
+  margin: 0;
+  border-radius: 0;
+  height: 18rem;
+  width: 20rem; }
+
+.talk-information {
+  display: block;
+  padding: 3rem;
+  float: right; }
+
+.talk-author {
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+.talk-search-display {
+  min-height: 0;
+  background: none; }
+
+span.talk.talk-search-result, span.talk-search-result.talk-search-display {
+  background: none; }
+
+.talk-search-display:hover {
+  background: inherit; }
+
+.quote-link {
+  color: inherit; }
+
+.quote-link:hover {
+  color: inherit; }
+
+.quote, .quote-search-preview, .quote-card-preview {
+  min-height: 30rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: #1d1d1d; }
+
+.quotes > .quote, .quotes > .quote-search-preview, .quotes > .quote-card-preview {
+  transition: 0.3s; }
+  .quotes > .quote:hover, .quotes > .quote-search-preview:hover, .quotes > .quote-card-preview:hover {
+    background: #242424; }
+
+.quote-search-preview, .quote-card-preview {
+  padding: 0;
+  margin: 0;
+  background: inherit;
+  min-height: inherit;
+  border-radius: 1rem !important; }
+
+.quote-search-preview:hover, .quote-card-preview:hover {
+  background: inherit; }
+
+.quote-content {
+  min-height: 20rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  text-align: center; }
+
+.quote-left {
+  align-self: flex-start; }
+
+.quote-right {
+  align-self: flex-end; }
+
+.quote-author > a, .quote-author > .post-preview-title, .quote-author > .book-preview-title, .commento-markdown-help > tr > td.quote-author > a, .commento-body > div > p.quote-author > a {
+  color: inherit; }
+
+.quote-author > a:hover, .quote-author > .post-preview-title:hover, .quote-author > .book-preview-title:hover, .commento-markdown-help > tr > td.quote-author > a:hover, .commento-body > div > p.quote-author > a:hover {
+  color: #e9e9e9; }
+
+.quote-preview {
+  border-radius: 1rem !important;
+  color: inherit; }
+
+.quote-preview-link {
+  border-radius: 1rem !important; }
+
+.quote-content-home {
+  font-size: 1.8rem; }
+
+.quote-card-preview > .quote-author {
+  margin-top: 1rem;
+  font-size: 1.6rem; }
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 40rem);
+  grid-auto-rows: 20rem;
+  grid-gap: 1rem;
+  max-width: 100%; }
+
+.quote-card, .quote-grid .book-list-item, .quote-grid .recommended-results-item:not(:only-child) {
+  border-radius: 1rem !important;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+
+.quote-preview {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem !important; }
+
+.quote-preview > blockquote {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+  background: none; }
+
+.home > .quotes {
+  background-color: #030303 !important; }
+
+.quote-sidebar {
+  padding: 2rem;
+  font-weight: 300;
+  font-size: 1.8rem; }
+  .quote-sidebar .quotes-information {
+    padding: 0 1.725rem;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    text-rendering: optimizeLegibility;
+    width: 30rem; }
+    .quote-sidebar .quotes-information p {
+      margin: 2rem 0; }
+
+.quote-card-preview {
+  border-radius: 1rem !important; }
+
+.quote-results-item > a.quote-card, .quote-results-item > .quote-card.post-preview-title, .quote-results-item > .quote-card.book-preview-title, .quote-grid .quote-results-item > .book-preview-title.book-list-item, .quote-grid .quote-results-item > .book-preview-title.recommended-results-item:not(:only-child), .quote-grid .quote-results-item > .post-preview-title.book-list-item, .quote-grid .quote-results-item > .post-preview-title.recommended-results-item:not(:only-child), .quote-grid .quote-results-item > a.book-list-item, .quote-grid .quote-results-item > a.recommended-results-item:not(:only-child), .commento-markdown-help > tr > td.quote-results-item > a.quote-card, .quote-grid .commento-markdown-help > tr > td.quote-results-item > a.book-list-item, .quote-grid .commento-markdown-help > tr > td.quote-results-item > a.recommended-results-item:not(:only-child), .commento-body > div > p.quote-results-item > a.quote-card, .quote-grid .commento-body > div > p.quote-results-item > a.book-list-item, .quote-grid .commento-body > div > p.quote-results-item > a.recommended-results-item:not(:only-child) {
+  height: 100%; }
+
+.quote-card > .quote-card-preview, .quote-grid .book-list-item > .quote-card-preview, .quote-grid .recommended-results-item:not(:only-child) > .quote-card-preview {
+  background: none; }
+
+.quote-card.null-result, .quote-grid .null-result.book-list-item, .quote-grid .null-result.recommended-results-item:not(:only-child) {
+  background-color: #0a0a0a !important;
+  padding: 2rem; }
+
+.home > .quotes > .quote-grid li.quote-results-item:only-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2; }
+  .home > .quotes > .quote-grid li.quote-results-item:only-child .big-card {
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+.home > .quotes > .quote-grid .quote-card:nth-of-type(4n), .home > .quotes > .quote-grid .book-list-item:nth-of-type(4n), .home > .quotes > .quote-grid .recommended-results-item:nth-of-type(4n):not(:only-child),
+.home > .quotes > .quote-grid li:nth-of-type(4n) > .quote-card:not(:hover),
+.home > .quotes > .quote-grid li:nth-of-type(4n) > .book-list-item:not(:hover),
+.home > .quotes > .quote-grid li:nth-of-type(4n) > .recommended-results-item:not(:hover):not(:only-child) {
+  background-color: #171717; }
+  .home > .quotes > .quote-grid .quote-card:nth-of-type(4n):hover, .home > .quotes > .quote-grid .book-list-item:nth-of-type(4n):hover, .home > .quotes > .quote-grid .recommended-results-item:nth-of-type(4n):hover:not(:only-child),
+  .home > .quotes > .quote-grid li:nth-of-type(4n) > .quote-card:not(:hover):hover,
+  .home > .quotes > .quote-grid li:nth-of-type(4n) > .book-list-item:not(:hover):hover,
+  .home > .quotes > .quote-grid li:nth-of-type(4n) > .recommended-results-item:not(:hover):hover:not(:only-child) {
+    background-color: #242424 !important;
+    color: #e9e9e9; }
+.home > .quotes > .quote-grid .quote-card:nth-of-type(4n-1), .home > .quotes > .quote-grid .book-list-item:nth-of-type(4n-1), .home > .quotes > .quote-grid .recommended-results-item:nth-of-type(4n-1):not(:only-child),
+.home > .quotes > .quote-grid li:nth-of-type(4n-1) > .quote-card:not(:hover),
+.home > .quotes > .quote-grid li:nth-of-type(4n-1) > .book-list-item:not(:hover),
+.home > .quotes > .quote-grid li:nth-of-type(4n-1) > .recommended-results-item:not(:hover):not(:only-child) {
+  background-color: #0f0f0f; }
+  .home > .quotes > .quote-grid .quote-card:nth-of-type(4n-1):hover, .home > .quotes > .quote-grid .book-list-item:nth-of-type(4n-1):hover, .home > .quotes > .quote-grid .recommended-results-item:nth-of-type(4n-1):hover:not(:only-child),
+  .home > .quotes > .quote-grid li:nth-of-type(4n-1) > .quote-card:not(:hover):hover,
+  .home > .quotes > .quote-grid li:nth-of-type(4n-1) > .book-list-item:not(:hover):hover,
+  .home > .quotes > .quote-grid li:nth-of-type(4n-1) > .recommended-results-item:not(:hover):hover:not(:only-child) {
+    background-color: #242424 !important;
+    color: #e9e9e9; }
+.home > .quotes > .quote-grid .quote-card:nth-of-type(4n-2), .home > .quotes > .quote-grid .book-list-item:nth-of-type(4n-2), .home > .quotes > .quote-grid .recommended-results-item:nth-of-type(4n-2):not(:only-child),
+.home > .quotes > .quote-grid li:nth-of-type(4n-2) > .quote-card:not(:hover),
+.home > .quotes > .quote-grid li:nth-of-type(4n-2) > .book-list-item:not(:hover),
+.home > .quotes > .quote-grid li:nth-of-type(4n-2) > .recommended-results-item:not(:hover):not(:only-child) {
+  background-color: #0f0f0f; }
+  .home > .quotes > .quote-grid .quote-card:nth-of-type(4n-2):hover, .home > .quotes > .quote-grid .book-list-item:nth-of-type(4n-2):hover, .home > .quotes > .quote-grid .recommended-results-item:nth-of-type(4n-2):hover:not(:only-child),
+  .home > .quotes > .quote-grid li:nth-of-type(4n-2) > .quote-card:not(:hover):hover,
+  .home > .quotes > .quote-grid li:nth-of-type(4n-2) > .book-list-item:not(:hover):hover,
+  .home > .quotes > .quote-grid li:nth-of-type(4n-2) > .recommended-results-item:not(:hover):hover:not(:only-child) {
+    background-color: #242424 !important;
+    color: #e9e9e9; }
+.home > .quotes > .quote-grid .quote-card:nth-of-type(4n-3), .home > .quotes > .quote-grid .book-list-item:nth-of-type(4n-3), .home > .quotes > .quote-grid .recommended-results-item:nth-of-type(4n-3):not(:only-child),
+.home > .quotes > .quote-grid li:nth-of-type(4n-3) > .quote-card:not(:hover),
+.home > .quotes > .quote-grid li:nth-of-type(4n-3) > .book-list-item:not(:hover),
+.home > .quotes > .quote-grid li:nth-of-type(4n-3) > .recommended-results-item:not(:hover):not(:only-child) {
+  background-color: #171717; }
+  .home > .quotes > .quote-grid .quote-card:nth-of-type(4n-3):hover, .home > .quotes > .quote-grid .book-list-item:nth-of-type(4n-3):hover, .home > .quotes > .quote-grid .recommended-results-item:nth-of-type(4n-3):hover:not(:only-child),
+  .home > .quotes > .quote-grid li:nth-of-type(4n-3) > .quote-card:not(:hover):hover,
+  .home > .quotes > .quote-grid li:nth-of-type(4n-3) > .book-list-item:not(:hover):hover,
+  .home > .quotes > .quote-grid li:nth-of-type(4n-3) > .recommended-results-item:not(:hover):hover:not(:only-child) {
+    background-color: #242424 !important;
+    color: #e9e9e9; }
+.home > .quotes > .quote-grid .quote-card:nth-of-type(4n-3).null-result, .home > .quotes > .quote-grid .book-list-item:nth-of-type(4n-3).null-result, .home > .quotes > .quote-grid .recommended-results-item:nth-of-type(4n-3).null-result:not(:only-child) {
+  background-color: #0f0f0f; }
+  .home > .quotes > .quote-grid .quote-card:nth-of-type(4n-3).null-result:hover, .home > .quotes > .quote-grid .book-list-item:nth-of-type(4n-3).null-result:hover, .home > .quotes > .quote-grid .recommended-results-item:nth-of-type(4n-3).null-result:hover:not(:only-child) {
+    background-color: #1f1f1f; }
+.home > .quotes > .quote-grid .quote-card:hover, .home > .quotes > .quote-grid .book-list-item:hover, .home > .quotes > .quote-grid .recommended-results-item:hover:not(:only-child) {
+  background-color: #242424 !important;
+  color: #e9e9e9; }
+
+@media only screen and (max-width: 700px) {
+  .quote-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 40rem);
+    grid-auto-rows: 20rem;
+    grid-gap: 2rem;
+    max-width: 100%; }
+
+  .home > .quotes > .quote-grid .quote-card:nth-of-type(2n), .home > .quotes > .quote-grid .book-list-item:nth-of-type(2n), .home > .quotes > .quote-grid .recommended-results-item:nth-of-type(2n):not(:only-child) {
+    background-color: #171717; }
+  .home > .quotes > .quote-grid .quote-card:nth-of-type(2n-1), .home > .quotes > .quote-grid .book-list-item:nth-of-type(2n-1), .home > .quotes > .quote-grid .recommended-results-item:nth-of-type(2n-1):not(:only-child) {
+    background-color: #0f0f0f; }
+
+  .quotes-information {
+    padding: 0 1.725rem;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    text-rendering: optimizeLegibility;
+    width: 40rem; }
+    .quotes-information p {
+      margin: 2rem 0; }
+    .quotes-information .search-box {
+      margin-bottom: 2rem; } }
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  .quote-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 35rem);
+    grid-auto-rows: 20rem;
+    grid-gap: 1rem;
+    max-width: 100%; } }
+.comments-full {
+  background: #0f0f0f;
+  color: #aaa; }
+
+.comments-open, .comments-close {
+  margin: auto;
+  margin-top: -3rem;
+  padding: 3rem;
+  background: #111111;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer; }
+  .comments-open:hover, .comments-close:hover {
+    background: #1d1d1d;
+    color: #e9e9e9; }
+
+.comments-full-header {
+  margin-bottom: 2.4rem; }
+
+.comments-full-title {
+  color: inherit; }
+
+.comments-icon {
+  font-size: 2rem; }
+
+#commento-textarea-root, #commento > #commento-main-area > #commento-comments-area > div > .commento-card > div > .commento-body > .commento-button-margin > .commento-textarea-container > textarea {
+  background: #0a0a0a;
+  border: none;
+  border-radius: 1rem;
+  color: #aaa; }
+
+.commento-card {
+  background: #171717;
+  border-radius: 1rem; }
+
+#commento-submit-button-root, .commento-submit-button, .commento-button {
+  text-transform: none;
+  color: #aaa;
+  font-size: 1.2rem; }
+
+.commento-comments {
+  margin-top: 2rem; }
+
+.commento-markdown-help {
+  border: none;
+  border-radius: 1rem;
+  background: #0d0d0d; }
+
+.commento-body > div > p {
+  color: #aaa;
+  font-size: 1.4rem; }
+
+.commento-logo-container {
+  display: none; }
+
+.popup {
+  width: 50vw;
+  height: 50vh;
+  position: fixed;
+  top: 25vh;
+  left: 25vw;
+  border-radius: 1rem;
+  border: none;
+  z-index: 100;
+  background: #171717;
+  transition: .3s; }
+
+.crypto-address-box, .image-details-box {
+  width: 50vw;
+  height: 50vh;
+  position: fixed;
+  top: 25vh;
+  left: 25vw;
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem; }
+
+.crypt-address {
+  background: #242424;
+  color: #e9e9e9;
+  font-weight: 300;
+  font-size: 2rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: none;
+  width: 100%;
+  height: 6rem;
+  text-align: center; }
+
+.copy-text {
+  width: 50%; }
+
+.screen {
+  background: #000;
+  opacity: .6;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99; }
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #aaa;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background: #242424;
+  opacity: .5;
+  z-index: 101;
+  transition: .3s;
+  cursor: pointer; }
+  .close-button:hover {
+    background: #3d3d3d; }
+
+.kg-bookmark-card, .kg-embed-card {
+  background: #1f1f1f;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 5rem 0; }
+  .kg-bookmark-card figcaption, .kg-embed-card figcaption {
+    font-size: 1.4rem;
+    padding: 1rem; }
+
+.kg-embed-card {
+  padding: 2rem; }
+  .kg-embed-card iframe {
+    margin: 0; }
+  .kg-embed-card figcaption {
+    padding: .5rem; }
+
+.kg-bookmark-container {
+  text-align: justify;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  text-decoration: none;
+  color: #aaa;
+  border-radius: 1rem;
+  background: #0f0f0f;
+  cursor: pointer;
+  max-width: 100%; }
+  .kg-bookmark-container:hover {
+    background: #1f1f1f;
+    color: #e9e9e9; }
+    .kg-bookmark-container:hover .kg-bookmark-metadata {
+      background: #171717; }
+      .kg-bookmark-container:hover .kg-bookmark-metadata:hover {
+        background: #2e2e2e; }
+
+.kg-bookmark-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 2rem;
+  font-size: 1.4rem;
+  order: 1; }
+
+.kg-bookmark-description,
+.kg-bookmark-metadata {
+  margin-top: 1.2rem; }
+
+.kg-bookmark-metadata {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background: #1a1a1a;
+  border-radius: 1rem;
+  opacity: .8;
+  transition: .3s; }
+
+.kg-bookmark-thumbnail {
+  order: 2; }
+
+.kg-bookmark-thumbnail img, .kg-bookmark-thumbnail .post-full iframe, .post-full .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .post-preview iframe, .post-preview .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .book-preview iframe, .book-preview .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .quote-preview iframe, .quote-preview .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .book-full iframe, .book-full .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .talk-full iframe, .talk-full .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .quote-full iframe, .quote-full .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .comments-full iframe, .comments-full .kg-bookmark-thumbnail iframe {
+  width: 25rem;
+  height: 20rem;
+  object-fit: cover; }
+
+.kg-bookmark-icon {
+  width: 2rem;
+  height: 2rem;
+  opacity: 1; }
+
+.kg-bookmark-author:after {
+  content: "•";
+  margin: 0 .6rem; }
+
+.gh-signin {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 3rem; }
+
+.message-success,
+.message-error,
+.subscribe-btn-load-spinner,
+.subscribe-btn-check,
+.subscribe-form-title-success,
+.subscribe-form-description-success {
+  display: none; }
+
+form.loading > div.gh-signin > button.gh-btn > i.subscribe-btn-load-spinner {
+  display: inline-block;
+  font-size: 1.7rem; }
+
+form:not(.loading) > div.gh-signin > button.gh-btn > i.subscribe-btn-load-spinner {
+  display: none; }
+
+form.loading > div.gh-signin > button.gh-btn > span.subscribe-btn-text {
+  display: none; }
+
+form.success > div.gh-signin > button.gh-btn > i.subscribe-btn-check {
+  display: inline-block; }
+
+form:not(.success) > div.gh-signin > button.gh-btn > i.subscribe-btn-check {
+  display: none; }
+
+form.success > div.gh-signin > button.gh-btn > span.subscribe-btn-text {
+  display: none; }
+
+form.success > header > h3.subscribe-form-title, .post-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, .post-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title, .book-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title, .quote-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title, .book-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, .talk-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, .quote-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, .comments-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, form.success > header > .subscribe-form-title.kg-bookmark-title, form.success > header > .subscribe-form-title.load-icon {
+  display: none; }
+
+form.success > header > h3.subscribe-form-title-success, .post-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .post-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .book-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .quote-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .book-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .talk-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .quote-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .comments-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, form.success > header > .subscribe-form-title-success.kg-bookmark-title, form.success > header > .subscribe-form-title-success.load-icon {
+  display: inline-block; }
+
+form.success > .subscribe-form-description-success {
+  display: inline-block;
+  font-size: 1.4rem; }
+
+.error {
+  background: red; }
+
+.gh-input-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.gh-input {
+  background: #121212;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0 1.5rem;
+  color: #e9e9e9; }
+
+.gh-btn {
+  color: inherit;
+  background: #2b2b2b;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer; }
+
+.gh-btn:hover {
+  background: #313131; }
+
+.subscribe-box {
+  margin: 3rem;
+  border-radius: 1rem;
+  background: #212121;
+  padding: 3rem;
+  text-align: center; }
+
+blockquote.twitter-tweet > p,
+blockquote.twitter-tweet > a,
+blockquote.twitter-tweet > .post-preview-title,
+blockquote.twitter-tweet > .book-preview-title,
+blockquote.twitter-tweet {
+  padding: 1.725rem 0;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-rendering: optimizeLegibility; }
+
+.twitter-card-icon {
+  font-size: 3rem;
+  text-align: right; }
+
+.home {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2rem;
+  position: relative; }
+  .home .letters, .home .articles, .home .information, .home .quotes {
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0;
+    background: #171717;
+    height: fit-content; }
+    .home .letters .home-title, .home .articles .home-title, .home .information .home-title, .home .quotes .home-title {
+      color: #e9e9e9;
+      padding: 2rem; }
+      .home .letters .home-title a, .home .letters .home-title .post-preview-title, .home .letters .home-title .book-preview-title, .home .articles .home-title a, .home .articles .home-title .post-preview-title, .home .articles .home-title .book-preview-title, .home .information .home-title a, .home .information .home-title .post-preview-title, .home .information .home-title .book-preview-title, .home .quotes .home-title a, .home .quotes .home-title .post-preview-title, .home .quotes .home-title .book-preview-title {
+        color: #e9e9e9; }
+        .home .letters .home-title a:hover, .home .letters .home-title .post-preview-title:hover, .home .letters .home-title .book-preview-title:hover, .home .articles .home-title a:hover, .home .articles .home-title .post-preview-title:hover, .home .articles .home-title .book-preview-title:hover, .home .information .home-title a:hover, .home .information .home-title .post-preview-title:hover, .home .information .home-title .book-preview-title:hover, .home .quotes .home-title a:hover, .home .quotes .home-title .post-preview-title:hover, .home .quotes .home-title .book-preview-title:hover {
+          color: #a0d0a7; }
+    .home .letters .button-special, .home .letters .copy-text, .home .articles .button-special, .home .articles .copy-text, .home .information .button-special, .home .information .copy-text, .home .quotes .button-special, .home .quotes .copy-text {
+      margin-bottom: 2rem; }
+  .home .letters, .home .articles {
+    position: relative; }
+    .home .letters .button-special, .home .letters .copy-text, .home .articles .button-special, .home .articles .copy-text {
+      margin: 4rem; }
+    .home .letters .post-preview-link:hover, .home .letters .book-preview-link:hover, .home .letters .quote-preview-link:hover, .home .letters .quote-card:hover, .home .letters .quote-grid .book-list-item:hover, .quote-grid .home .letters .book-list-item:hover, .home .letters .quote-grid .recommended-results-item:hover:not(:only-child), .quote-grid .home .letters .recommended-results-item:hover:not(:only-child), .home .articles .post-preview-link:hover, .home .articles .book-preview-link:hover, .home .articles .quote-preview-link:hover, .home .articles .quote-card:hover, .home .articles .quote-grid .book-list-item:hover, .quote-grid .home .articles .book-list-item:hover, .home .articles .quote-grid .recommended-results-item:hover:not(:only-child), .quote-grid .home .articles .recommended-results-item:hover:not(:only-child) {
+      color: #e9e9e9;
+      background-color: #212121; }
+      .home .letters .post-preview-link:hover .post-preview-title, .home .letters .book-preview-link:hover .post-preview-title, .home .letters .quote-preview-link:hover .post-preview-title, .home .letters .quote-card:hover .post-preview-title, .home .letters .quote-grid .book-list-item:hover .post-preview-title, .quote-grid .home .letters .book-list-item:hover .post-preview-title, .home .letters .quote-grid .recommended-results-item:hover:not(:only-child) .post-preview-title, .quote-grid .home .letters .recommended-results-item:hover:not(:only-child) .post-preview-title, .home .letters .post-preview-link:hover .book-preview-title, .home .letters .book-preview-link:hover .book-preview-title, .home .letters .quote-preview-link:hover .book-preview-title, .home .letters .quote-card:hover .book-preview-title, .home .letters .quote-grid .book-list-item:hover .book-preview-title, .quote-grid .home .letters .book-list-item:hover .book-preview-title, .home .letters .quote-grid .recommended-results-item:hover:not(:only-child) .book-preview-title, .quote-grid .home .letters .recommended-results-item:hover:not(:only-child) .book-preview-title, .home .articles .post-preview-link:hover .post-preview-title, .home .articles .book-preview-link:hover .post-preview-title, .home .articles .quote-preview-link:hover .post-preview-title, .home .articles .quote-card:hover .post-preview-title, .home .articles .quote-grid .book-list-item:hover .post-preview-title, .quote-grid .home .articles .book-list-item:hover .post-preview-title, .home .articles .quote-grid .recommended-results-item:hover:not(:only-child) .post-preview-title, .quote-grid .home .articles .recommended-results-item:hover:not(:only-child) .post-preview-title, .home .articles .post-preview-link:hover .book-preview-title, .home .articles .book-preview-link:hover .book-preview-title, .home .articles .quote-preview-link:hover .book-preview-title, .home .articles .quote-card:hover .book-preview-title, .home .articles .quote-grid .book-list-item:hover .book-preview-title, .quote-grid .home .articles .book-list-item:hover .book-preview-title, .home .articles .quote-grid .recommended-results-item:hover:not(:only-child) .book-preview-title, .quote-grid .home .articles .recommended-results-item:hover:not(:only-child) .book-preview-title {
+        color: #a0d0a7; }
+  .home .information {
+    background-color: #111111;
+    position: sticky;
+    top: 5rem; }
+  .home .post-preview, .home .book-preview, .home .quote-preview {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 15rem;
+    width: 40rem;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background: inherit; }
+  .home .post-preview-title, .home .book-preview-title {
+    text-align: center; }
+  .home .post-preview-link:nth-of-type(even), .home .book-preview-link:nth-of-type(even), .home .quote-preview-link:nth-of-type(even), .home .quote-card:nth-of-type(even), .home .quote-grid .book-list-item:nth-of-type(even), .quote-grid .home .book-list-item:nth-of-type(even), .home .quote-grid .recommended-results-item:nth-of-type(even):not(:only-child), .quote-grid .home .recommended-results-item:nth-of-type(even):not(:only-child) {
+    background-color: #171717; }
+  .home .post-preview-link:nth-of-type(odd), .home .book-preview-link:nth-of-type(odd), .home .quote-preview-link:nth-of-type(odd), .home .quote-card:nth-of-type(odd), .home .quote-grid .book-list-item:nth-of-type(odd), .quote-grid .home .book-list-item:nth-of-type(odd), .home .quote-grid .recommended-results-item:nth-of-type(odd):not(:only-child), .quote-grid .home .recommended-results-item:nth-of-type(odd):not(:only-child) {
+    background-color: #111111; }
+  .home .post-preview-excerpt {
+    display: none; }
+  .home .post-preview-header, .home .book-preview-header {
+    flex-flow: column nowrap;
+    justify-content: space-evenly; }
+  .home .post-preview-footer, .home .book-preview-footer {
+    display: none; }
+  .home .post-preview-title, .home .book-preview-title {
+    font-size: 1.8rem;
+    font-weight: 400; }
+  .home .post-preview-image {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 15rem;
+    margin: 0;
+    border-radius: 0; }
+
+@media only screen and (max-width: 700px) {
+  .home {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin: auto;
+    width: 100vw;
+    padding-bottom: 5rem; }
+    .home .letters:not(.latest) {
+      display: none; }
+
+  .information, .information-placeholder {
+    display: none; } }
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  .home {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: auto;
+    margin-top: 2rem;
+    width: 100vw;
+    padding-bottom: 5rem; }
+    .home .articles, .home .letters, .home .information {
+      max-width: 47.5%; }
+
+  .information, .information-placeholder {
+    display: none; } }
+html {
+  font-size: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  background: #030303;
+  color: #aaa;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: justify;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main-title, .main-title-device {
+  font-weight: 300;
+  font-size: 3.6rem;
+  color: #52aa5e; }
+
+.main-title-device {
+  display: none; }
+
+h2 {
+  font-weight: 300; }
+
+h3, .post-full .dictionary-definition dl dt, .post-preview .dictionary-definition dl dt, .book-preview .dictionary-definition dl dt, .quote-preview .dictionary-definition dl dt, .book-full .dictionary-definition dl dt, .talk-full .dictionary-definition dl dt, .quote-full .dictionary-definition dl dt, .comments-full .dictionary-definition dl dt, .kg-bookmark-title, .load-icon {
+  font-weight: 300;
+  font-size: 2.4rem; }
+
+h6 {
+  font-weight: 800;
+  font-size: 2rem; }
+
+a, .post-preview-title, .book-preview-title, .commento-markdown-help > tr > td > a, .commento-body > div > p > a {
+  color: #52aa5e;
+  text-decoration: none;
+  transition: 0.3s; }
+  a:hover, .post-preview-title:hover, .book-preview-title:hover, .commento-markdown-help > tr > td > a:hover, .commento-body > div > p > a:hover {
+    color: #a0d0a7; }
+
+button {
+  transition: 0.3s; }
+
+.main-site-header, .post-full-header, .book-full-header, .talk-full-header, .quote-full-header, .comments-full-header, .post-preview-header, .book-preview-header, .main-site-header-private {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem; }
+
+.main-site-header-private {
+  justify-content: center; }
+
+.request-private {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+main {
+  max-width: 100%; }
+
+.hide {
+  display: none; }
+
+.search-bar {
+  font-size: 2rem;
+  background: #111111;
+  color: #e9e9e9;
+  font-weight: 300;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: none;
+  height: 100%;
+  width: 25rem; }
+
+.support-button {
+  position: fixed;
+  bottom: 2rem;
+  left: 1rem;
+  cursor: pointer; }
+
+.support-icon {
+  color: #242424;
+  transition: 0.3s; }
+  .support-icon:hover {
+    color: #ef2d56; }
+
+.back-to-top-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  opacity: 0.3;
+  cursor: pointer; }
+
+.back-to-top-icon {
+  color: #575757;
+  transition: 0.3s; }
+  .back-to-top-icon:hover {
+    color: #e9e9e9; }
+
+.pay-icon,
+.contact-icon {
+  font-size: 4rem;
+  color: #aaa;
+  transition: 0.3s; }
+  .pay-icon:hover,
+  .contact-icon:hover {
+    color: #e9e9e9; }
+
+.pay-button,
+.contact-button {
+  display: block;
+  margin: auto;
+  padding: 4rem;
+  border: none;
+  border-radius: 1rem;
+  transition: 0.3s;
+  background: #1d1d1d; }
+  .pay-button:hover,
+  .contact-button:hover {
+    background: #242424; }
+
+.load-icon {
+  margin: auto;
+  animation: spin 4s infinite linear; }
+
+.device-only {
+  display: none; }
+
+.kg-width-full,
+.kg-width-wide,
+.kg-gallery-container,
+.kg-gallery-row,
+.kg-gallery-image {
+  color: inherit; }
+
+.kg-image-card,
+.kg-image,
+.kg-embed-card {
+  color: inherit; }
+
+.buttons-box, .buttons-box-inline {
+  margin-top: 5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.buttons-box-inline {
+  margin-top: 1rem; }
+
+.button-special, .copy-text {
+  padding: 3rem;
+  margin: 1rem;
+  background: #212121;
+  cursor: pointer;
+  transition: 0.3s; }
+  .button-special:hover, .copy-text:hover {
+    background: #2b2b2b;
+    color: #e9e9e9;
+    -webkit-box-shadow: 0px 10px 27px -9px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 10px 27px -9px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 10px 27px -9px rgba(0, 0, 0, 0.6); }
+
+.text-align-left {
+  text-align: left !important; }
+
+.search-icon {
+  cursor: pointer; }
+
+#search-results, #quote-results, #recommended-results {
+  list-style: none; }
+
+#stay-determined {
+  transition: 0.3s; }
+  #stay-determined:hover {
+    background: #242424;
+    color: #e9e9e9; }
+    #stay-determined:hover .flame-of-determination {
+      color: #ef2d56; }
+
+.search-box {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #171717;
+  border-radius: 1rem;
+  padding-right: 2rem; }
+
+#search-quotes.search-bar, #search-recommended.search-bar {
+  background: #171717;
+  font-size: inherit;
+  font-weight: inherit;
+  width: 20rem; }
+
+.flame-of-determination {
+  transition: 0.3s; }
+
+section.post-full.big-card.no-search-results, section.big-card.no-search-results.post-preview, section.big-card.no-search-results.book-preview, section.big-card.no-search-results.quote-preview, section.big-card.no-search-results.book-full, section.big-card.no-search-results.talk-full, section.big-card.no-search-results.quote-full, section.big-card.no-search-results.comments-full {
+  margin: 0; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@media only screen and (max-width: 700px) {
+  html {
+    width: 100vw;
+    padding: 0;
+    font-size: 8.5px; }
+
+  body {
+    padding: 0;
+    margin: 0; }
+
+  .main-site-header, .post-full-header, .book-full-header, .talk-full-header, .quote-full-header, .comments-full-header, .post-preview-header, .book-preview-header, .main-site-header-private {
+    padding: 3rem 1rem;
+    margin: 0;
+    margin-bottom: 2rem; }
+
+  .main-title, .main-title-device {
+    display: none; }
+
+  .main-title-device {
+    display: block; }
+
+  main {
+    width: 100vw; }
+
+  .post-preview, .book-preview, .quote-preview,
+  .post-full,
+  .post-preview,
+  .book-preview,
+  .quote-preview,
+  .book-full,
+  .talk-full,
+  .quote-full,
+  .comments-full {
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+    padding: 2rem; }
+
+  .main-site-header, .post-full-header, .book-full-header, .talk-full-header, .quote-full-header, .comments-full-header, .post-preview-header, .book-preview-header, .main-site-header-private {
+    padding: 2rem;
+    padding-top: 4rem; }
+
+  .desktop-only {
+    display: none; }
+
+  .post-full-image, .post-preview-image {
+    height: 10rem;
+    background-size: 100%;
+    margin-bottom: 0rem;
+    border-radius: 0.25rem; }
+
+  .post-full-image.letterhead, .letterhead.post-preview-image {
+    margin-bottom: 1.8rem; }
+
+  .post-full-header, .book-full-header, .talk-full-header, .quote-full-header, .comments-full-header {
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    text-align: center; }
+
+  img, .post-full iframe, .post-preview iframe, .book-preview iframe, .quote-preview iframe, .book-full iframe, .talk-full iframe, .quote-full iframe, .comments-full iframe,
+  iframe {
+    max-width: 80%;
+    height: inherit; }
+
+  .post-preview, .book-preview, .quote-preview {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 15rem;
+    width: 100vw;
+    padding: 0;
+    background: inherit; }
+
+  .post-preview-title, .book-preview-title {
+    color: #e9e9e9;
+    text-align: center; }
+
+  .post-preview-link:nth-of-type(even), .book-preview-link:nth-of-type(even), .quote-preview-link:nth-of-type(even), .quote-card:nth-of-type(even), .quote-grid .book-list-item:nth-of-type(even), .quote-grid .recommended-results-item:nth-of-type(even):not(:only-child) {
+    background-color: #171717; }
+
+  .post-preview-link:nth-of-type(odd), .book-preview-link:nth-of-type(odd), .quote-preview-link:nth-of-type(odd), .quote-card:nth-of-type(odd), .quote-grid .book-list-item:nth-of-type(odd), .quote-grid .recommended-results-item:nth-of-type(odd):not(:only-child) {
+    background-color: #111111; }
+
+  .post-preview-excerpt {
+    display: none; }
+
+  .post-preview-header, .book-preview-header {
+    flex-flow: column nowrap;
+    justify-content: space-evenly; }
+
+  .post-preview-footer, .book-preview-footer {
+    display: none; }
+
+  .post-preview-title, .book-preview-title {
+    font-size: 1.8rem;
+    font-weight: 400; }
+
+  .post-preview-image {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 15rem;
+    margin: 0;
+    border-radius: 0; }
+
+  .menu-button {
+    display: inline-block; }
+
+  .device-nav {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; }
+
+  .device-nav.hide {
+    display: none; }
+
+  .device-nav > .nav {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; }
+
+  .device-nav > .nav > li {
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: #171717; }
+    .device-nav > .nav > li:hover {
+      background-color: #1d1d1d; }
+
+  .device-nav > .nav > li:nth-of-type(odd) {
+    background-color: #111111; }
+    .device-nav > .nav > li:nth-of-type(odd):hover {
+      background-color: #1d1d1d; }
+
+  .device-nav > .nav > li > a, .device-nav > .nav > li > .post-preview-title, .device-nav > .nav > li > .book-preview-title {
+    height: 15rem;
+    width: 100vw;
+    line-height: 15rem;
+    font-size: 2.4rem;
+    font-weight: 300; }
+
+  .device-social-buttons {
+    height: 15rem;
+    width: 100vw;
+    line-height: 15rem;
+    font-weight: 300;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    background-color: #0a0a0a; }
+
+  .device-nav-link > .nav-icon {
+    font-size: 3rem;
+    color: #aaa; }
+    .device-nav-link > .nav-icon:hover {
+      color: #e9e9e9; }
+
+  .books, .books-recommended {
+    padding: 0;
+    border-radius: 0;
+    width: 100%; }
+
+  .books-recommended {
+    width: 100vw; }
+
+  .book-search-title {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 400; }
+
+  .book-information {
+    width: 100%;
+    text-align: center; }
+
+  .book-snippet {
+    display: none; }
+
+  .book-search-display {
+    height: 100%;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    min-height: 0;
+    max-height: 15rem; }
+
+  .book-search-result {
+    min-height: 0;
+    max-height: 15rem; }
+
+  .load-icon {
+    text-align: center;
+    width: 100vw; }
+
+  .book-preview-header {
+    display: none; }
+
+  img.book-cover, .post-full iframe.book-cover, .post-preview iframe.book-cover, .book-preview iframe.book-cover, .quote-preview iframe.book-cover, .book-full iframe.book-cover, .talk-full iframe.book-cover, .quote-full iframe.book-cover, .comments-full iframe.book-cover {
+    height: 100%;
+    width: 12rem;
+    margin: 0;
+    border-radius: 0; }
+
+  img.book-search-cover, .post-full iframe.book-search-cover, .post-preview iframe.book-search-cover, .book-preview iframe.book-search-cover, .quote-preview iframe.book-search-cover, .book-full iframe.book-search-cover, .talk-full iframe.book-search-cover, .quote-full iframe.book-search-cover, .comments-full iframe.book-search-cover {
+    height: 15rem;
+    width: 15rem;
+    margin: 0;
+    border-radius: 0; }
+
+  .book-icon, .quote-icon {
+    margin: 2rem; }
+
+  .book-google-info {
+    display: none; }
+
+  .recommended-desc {
+    display: none; }
+
+  .device-only {
+    display: inline; }
+
+  .quote-preview-link {
+    display: none; }
+
+  .search-bar {
+    background: #242424; }
+
+  .crypto-address-box, .image-details-box {
+    width: 90vw;
+    height: 50vh;
+    position: fixed;
+    top: 25vh;
+    left: 5vw;
+    border-radius: 1rem;
+    border: none; }
+
+  .copy-text {
+    width: 70%; }
+
+  .popup {
+    width: 90vw;
+    left: 5vw; }
+
+  .comments-open,
+  .comments-close {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #171717;
+    font-family: "Ubuntu", sans-serif; }
+
+  .kg-bookmark-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  .kg-bookmark-description {
+    font-size: 1.2rem; }
+
+  .kg-bookmark-content {
+    flex-basis: 50%; }
+
+  .kg-bookmark-title {
+    text-align: left; }
+
+  .kg-bookmark-thumbnail {
+    flex-basis: 50%; }
+
+  .kg-bookmark-author {
+    display: none; }
+
+  .kg-bookmark-metadata {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0; }
+
+  .kg-bookmark-icon {
+    margin: 0;
+    justify-self: flex-start; }
+
+  .kg-bookmark-publisher {
+    margin-right: 2rem; } }
+
+/*# sourceMappingURL=style.css.map */

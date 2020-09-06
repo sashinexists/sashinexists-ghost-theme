@@ -1,0 +1,19 @@
+{{!< default}}
+{{> header}}
+<main>
+    <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+
+    <header class="post-full-header">
+        <h1 class="post-full-title">Error {{code}}</h1>
+        <h1><i class="fas fa-exclamation-circle"></i></h1>
+    </header>
+
+    <section class="post-full-content">
+        <div class="post-content">
+            <h3>{{message}}</h3>
+            <blockquote><a href={{@site.url}}>Return home <i class="fas fa-home"></i></a></blockquote>
+        </div>
+    </section>
+
+</article>
+</main>

@@ -1,0 +1,32 @@
+<header class="main-site-header">
+    <h1 class="main-title"><a title="{{@site.description}}" href="/">{{@site.title}}</a></h1>
+    <h1 class="main-title-device"><a title="{{@site.description}}" href="/">S</a></h1>
+    <nav class="main-navigation">
+        <ul class="nav-list js-nav-hide">
+            <ul class="nav-list desktop-only">
+                {{navigation}}
+                <li class="nav-list-item"><a class="nav-link twitter-button" title="Twitter" href="{{twitter_url}}"><i class="nav-icon fab fa-twitter-square"></i></a></li>
+                <li class="nav-list-item"><a class="nav-link facebook-button" title="Facebook" href="{{facebook_url}}"><i class="nav-icon fab fa-facebook-square"></i></a></li>
+                <li class="nav-list-item"><a class="nav-link subscribe-button" title="Subscribe" href="/subscribe"><i class="nav-icon fa fa-envelope"></i></a></li>
+
+            </ul>
+            <li class="nav-list-item menu-button js-menu-button"><a class="nav-link"><i class="nav-icon far fa-bars"></i></a></li>
+        </ul>
+        <ul>
+            <li class="nav-list-item hide ghost-search-field"><input class="search-bar" id="search-bar" placeholder="Search" autofocus/></li>
+            <li class="nav-list-item"><a class="nav-link search-button" title="Search"><i class="search-icon nav-icon far fa-search"></i></a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="search-results" class="results-field"></section>
+
+<nav class="hide js-device-nav device-nav">
+    {{navigation}}
+    <ul class="device-social-buttons">
+        <li class="nav-list-item"><a class="nav-link device-nav-link" title="Subscribe" href="/subscribe"><i class="support-icon nav-icon fa fa-envelope"></i></a></li>
+        <li class="nav-list-item"><a class="nav-link device-nav-link" title="Twitter" href="{{twitter_url}}"><i class="nav-icon nav-icon fab fa-twitter-square"></i></a></li>
+        <li class="nav-list-item"><a class="nav-link device-nav-link" title="Facebook" href="{{facebook_url}}"><i class="nav-icon nav-icon fab fa-facebook-square"></i></a></li>
+        <li class="nav-list-item"><a class="nav-link device-nav-link" title="Thank you" href="/support"><i class="support-icon nav-icon fas fa-heart"></i></a></li>
+    </ul>
+</nav>

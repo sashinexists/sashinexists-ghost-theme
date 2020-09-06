@@ -1,0 +1,88 @@
+.comments-full {
+    @extend .post-full;
+    background: darken($eerie-black, 3%);
+    color: $dark-medium-gray;
+}
+
+.comments-open, .comments-close {
+    @extend .read-article;
+    margin:auto;
+    margin-top: -3rem;
+    padding: 3rem;
+    background: darken($eerie-black,2.5%);
+    font-family: "Ubuntu", sans-serif;
+    cursor: pointer;
+    &:hover {
+        background: lighten($eerie-black, 2.5%);
+        color: $platinum;
+    }
+}
+
+.comments-full-header {
+    @extend .post-full-header;
+    margin-bottom: 2.4rem;
+}
+
+.comments-full-title {
+    @extend .post-full-title;
+    color: inherit;
+}
+
+.comments-full-content {
+    @extend .post-full-content;
+}
+
+.comments-icon {
+    font-size: 2rem;
+}
+
+#commento-textarea-root {
+    background: darken($eerie-black,5%);
+    border:none;
+    border-radius: 1rem;
+    color: $dark-medium-gray;
+}
+
+//for when you reply to a comment
+#commento > #commento-main-area > #commento-comments-area > div > .commento-card > div > .commento-body >.commento-button-margin > .commento-textarea-container > textarea {
+    @extend #commento-textarea-root;
+}
+
+
+.commento-card {
+    background: $eerie-black;
+    border-radius: 1rem;
+}
+
+#commento-submit-button-root, .commento-submit-button, .commento-button{
+    @extend .read-article;
+    text-transform: none;
+    color: $dark-medium-gray;
+    font-size: 1.2rem;
+}
+
+.commento-comments{
+    margin-top: 2rem;
+}
+
+.commento-markdown-help{
+    border: none;
+    border-radius: 1rem;
+    background: darken($eerie-black,4%);
+}
+
+.commento-markdown-help > tr > td > a{
+    @extend a;
+}
+
+.commento-body > div > p {
+    color: $dark-medium-gray;
+    font-size: 1.4rem;
+    > a {
+        @extend a;
+    }
+}
+
+.commento-logo-container {
+    display:none;
+}

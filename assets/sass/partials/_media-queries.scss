@@ -1,0 +1,360 @@
+// For mobile 
+@media only screen and (max-width: 700px) {
+    html {
+        width: 100vw;
+        padding: 0;
+        font-size: 8.5px;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-site-header {
+        padding: 3rem 1rem;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .main-title {
+        display: none;
+    }
+
+    .main-title-device {
+        display: block;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    .post-preview,
+    .post-full {
+        border-radius: 0;
+        margin: 0;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .main-site-header {
+        padding: 2rem;
+        padding-top: 4rem;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .post-full-image {
+        height: 10rem;
+        background-size: 100%;
+        margin-bottom: 0rem;
+        border-radius: 0.25rem;
+    }
+
+    .post-full-image.letterhead {
+        margin-bottom:1.8rem;
+    }
+
+    .post-full-header {
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    img,
+    iframe {
+        max-width: 80%;
+        height: inherit;
+    }
+
+    .post-preview {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 15rem;
+        width: 100vw;
+        padding: 0;
+        background: inherit
+    }
+
+    .post-preview-title {
+        color: $platinum;
+        text-align: center;
+    }
+
+    .post-preview-link:nth-of-type(even) {
+        background-color: $eerie-black;
+    }
+
+    .post-preview-link:nth-of-type(odd) {
+        background-color: darken($eerie-black, 2.5%);
+    }
+
+    .post-preview-excerpt {
+        display: none;
+    }
+
+    .post-preview-header {
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+    }
+
+    .post-preview-footer {
+        display: none;
+    }
+
+    .post-preview-title {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    .post-preview-image {
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 15rem;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .menu-button {
+        display: inline-block;
+    }
+
+    .device-nav {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .device-nav.hide {
+        display: none;
+    }
+
+    .device-nav>.nav {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .device-nav>.nav>li {
+        text-align: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        background-color: $eerie-black;
+
+        &:hover {
+            background-color: lighten($eerie-black, 2.5%);
+
+        }
+
+    }
+
+    .device-nav>.nav>li:nth-of-type(odd) {
+        background-color: darken($eerie-black, 2.5%);
+
+        &:hover {
+            background-color: lighten($eerie-black, 2.5%);
+
+        }
+    }
+
+    .device-nav>.nav>li>a {
+        height: 15rem;
+        width: 100vw;
+        line-height: 15rem;
+        font-size: 2.4rem;
+        font-weight: 300;
+    }
+
+    .device-social-buttons {
+        height: 15rem;
+        width: 100vw;
+        line-height: 15rem;
+        font-weight: 300;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        background-color: darken($eerie-black, 5%);
+    }
+
+    .device-nav-link>.nav-icon {
+        font-size: 3rem;
+        color: $dark-medium-gray;
+
+        &:hover {
+            color: $platinum;
+        }
+    }
+
+    .books {
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .books-recommended {
+        width: 100vw;
+    }
+
+    .book-search-title {
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    .book-information {
+        width: 100%;
+        text-align: center;
+    }
+
+    .book-snippet {
+        display: none;
+    }
+
+    .book-search-display {
+        height: 100%;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        min-height: 0;
+        max-height: 15rem;
+    }
+
+    .book-search-result {
+        min-height: 0;
+        max-height: 15rem;
+    }
+
+
+
+    .load-icon {
+        text-align: center;
+        width: 100vw;
+    }
+
+    .book-preview-header {
+        display: none;
+    }
+
+    img.book-cover {
+        height: 100%;
+        width: 12rem;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    img.book-search-cover {
+        height: 15rem;
+        width: 15rem;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .book-icon {
+        margin: 2rem;
+    }
+
+    .book-google-info {
+        display: none;
+    }
+
+    .recommended-desc {
+        display: none;
+    }
+
+    .device-only {
+        display: inline;
+    }
+
+    .quote-preview-link {
+        display: none;
+    }
+
+    .search-bar {
+        background: lighten($eerie-black, 5%);
+    }
+
+    .crypto-address-box {
+        width: 90vw;
+        height: 50vh;
+        position: fixed;
+        top: 25vh;
+        left: 5vw;
+        border-radius: 1rem;
+        border: none;
+    }
+
+    .copy-text {
+        width: 70%;
+    }
+
+    .popup {
+        width: 90vw;
+        left: 5vw;
+    }
+
+    .comments-open,
+    .comments-close {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        background: $eerie-black;
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    .kg-bookmark-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kg-bookmark-description {
+        font-size: 1.2rem;
+    }
+
+    .kg-bookmark-content {
+        flex-basis: 50%;
+    }
+
+    .kg-bookmark-title {
+        text-align: left;
+    }
+
+    .kg-bookmark-thumbnail {
+        flex-basis: 50%;
+    }
+
+    .kg-bookmark-author {
+        display: none;
+    }
+
+
+    .kg-bookmark-metadata {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+    }
+
+    .kg-bookmark-icon {
+        margin: 0;
+        justify-self: flex-start;
+    }
+
+    .kg-bookmark-publisher {
+        margin-right: 2rem;
+    }
+}

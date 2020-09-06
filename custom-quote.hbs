@@ -1,0 +1,64 @@
+{{!< default }}
+{{> header}}
+<main>
+    <script type="text/javascript" src="{{asset "js/quotes.js"}}"></script>
+    {{#post}}
+    <article class="quote-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+
+        <header class="quote-full-header">
+            <h1 class="quote-full-title">Quote</h1>
+            <i class="fas fa-comment-alt quote-icon"></i>
+        </header>
+
+        <section class="quote-full-content">
+            <blockquote class="quote">
+                <span class="quote-content">
+                    <i class="fas fa-quote-left quote-left"></i>
+                    {{excerpt}}
+                    <i class="fas fa-quote-right quote-right"></i>
+                </span>
+                <h6 class="quote-author">{{tags from="2" to="2"}}</h6>
+            </blockquote>
+            <div class="buttons-box">
+                <a href="" id="{{tags from="1" to="1" limit="all" visibility="internal" autolink="false"}}"
+                    class="buy-merchandise button-special">
+                    <span>
+                        <h3>Buy Merchandise</h3>
+                    </span>
+                    <i class="fas fa-tshirt"></i>
+                </a>
+                <a href="" id="{{tags from="2" to="2" limit="all" visibility="public" autolink="false"}}"
+                    class="about-author button-special">
+                    <span>
+                        <h3>About the Author</h3>
+                    </span>
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+            <hr>
+            <div class="post-content">
+                {{content}}
+            </div>
+        </section>
+        <div class="buttons-box-inline">
+            <a href="/" class="button-special return-home">
+                <span>
+                    <h3>Return home</h3>
+                </span>
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="/quotes" class="button-special">
+                <span>
+                    <h3>More Quotes</h3>
+                </span>
+                <i class="fas fa-quote-left"></i>
+            </a>
+        </div>
+    </article>
+    {{> comments}}
+    {{/post}}
+</main>
+
+<script>
+    RENDER_QUOTE_BUTTONS();
+</script>

@@ -1,0 +1,58 @@
+<!-- THIS IS TOTALLY NOT FINISHED, IT NEEDS WORK -->
+
+
+<article class="talk-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+
+    <header class="talk-full-header">
+        <h1 class="talk-full-title">Recommended talk</h1>
+        <i class="fas fa-microphone-alt talk-icon"></i>
+    </header>
+
+    <section class="talk-full-content">
+        <div class="talk {{title}}" id="{{tags from="1" to="1" limit="all" visibility="internal" autolink="false"}}">
+            <figure class="kg-card kg-embed-card">
+                <figcaption><h1 class="talk-title">{{title}}</h1></figcaption><iframe
+                    src="https://embed.ted.com/talks/sir_ken_robinson_do_schools_kill_creativity" scrolling="no"
+                    webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="560" height="421"
+                    frameborder="0"></iframe>
+            </figure>
+        </div>
+        <div class="buttons-box">
+            <a href="" id="{{tags from="2" to="2" limit="all" visibility="internal" autolink="false"}}"
+                class="button-special buy-book-amazon">
+                <span>
+                    <h3>Watch on YouTube</h3>
+                </span>
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="" id="{{tags from="3" to="3" limit="all"visibility="public" autolink="false"}}"
+                class="button-special about-author">
+                <span>
+                    <h3>About the Speaker</h3>
+                </span>
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+
+        <hr>
+        <div class="post-content">
+            {{content}}
+        </div>
+    </section>
+    <div class="buttons-box-inline">
+        <a href="/" class="button-special return-home">
+            <span>
+                <h3>Return home</h3>
+            </span>
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="/recommended" class="button-special">
+            <span>
+                <h3>More Videos</h3>
+            </span>
+            <i class="fas fa-video"></i>
+        </a>
+    </div>
+</article>
+
+{{> comments}}

@@ -1,0 +1,25 @@
+<a href={{url}} class="post-preview-link">
+    <article class="post-preview {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
+            <header class="post-preview-header">
+                <h2 class="post-preview-title"><span class="post-preview-title" href={{url}}>{{title}}</span></h2>
+                <section class="post-preview-meta">
+                    <time class="post-preview-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="Do MMMM YYYY"}}</time>
+                </section>
+            </header>
+
+            {{#if feature_image}}
+            <figure class="post-preview-image" style="background-image: url({{img_url feature_image size="l"}})">
+            </figure>
+            {{/if}}
+
+            <section class="post-preview-excerpt">
+                <p>{{excerpt}}...</p>
+            </section>
+            <footer class="post-preview-footer">
+                <span href={{url}} class="read-article">
+                    <span>Read</span>
+                    <i class="fas fa-book-open"></i>
+                </span>
+            </footer>
+    </article>
+</a>

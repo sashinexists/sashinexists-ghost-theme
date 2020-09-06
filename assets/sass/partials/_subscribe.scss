@@ -1,0 +1,95 @@
+
+.gh-signin {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.message-success,
+.message-error,
+.subscribe-btn-load-spinner,
+.subscribe-btn-check,
+.subscribe-form-title-success,
+.subscribe-form-description-success {
+    display: none;
+}
+
+form.loading>div.gh-signin>button.gh-btn>i.subscribe-btn-load-spinner {
+    display: inline-block;
+    font-size: 1.7rem;
+}
+
+form:not(.loading)>div.gh-signin>button.gh-btn>i.subscribe-btn-load-spinner {
+    display: none;
+}
+
+form.loading>div.gh-signin>button.gh-btn>span.subscribe-btn-text {
+    display: none;
+}
+
+form.success>div.gh-signin>button.gh-btn>i.subscribe-btn-check {
+    display: inline-block;
+}
+
+form:not(.success)>div.gh-signin>button.gh-btn>i.subscribe-btn-check {
+    display: none;
+}
+
+form.success>div.gh-signin>button.gh-btn>span.subscribe-btn-text {
+    display: none;
+}
+
+form.success>header>h3.subscribe-form-title {
+    display: none;
+}
+
+form.success>header>h3.subscribe-form-title-success {
+    display: inline-block;
+}
+
+form.success>.subscribe-form-description-success {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+.error {
+    background: red;
+}
+
+.gh-input-icon {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gh-input {
+    background: darken($eerie-black, 2%);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 1.5rem;
+    color: $platinum;
+}
+
+.gh-btn {
+    color: inherit;
+    background: lighten($eerie-black, 8%);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.gh-btn:hover {
+    background: lighten($eerie-black, 10%);
+}
+
+.subscribe-box {
+    margin: 3rem;
+    border-radius: 1rem;
+    background: lighten($eerie-black, 4%);
+    padding: 3rem;
+    text-align: center;
+}

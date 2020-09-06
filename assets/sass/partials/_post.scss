@@ -1,0 +1,221 @@
+.post-full {
+    margin: 3rem 0 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 76.8rem;
+    max-width: 100%;
+    background: $eerie-black;
+    padding: 5rem;
+    border-radius: 1rem;
+
+    ol,
+    ul {
+        margin-left: 4rem;
+
+        li {
+            padding: .5rem 0;
+            font-size: 1.7rem;
+            line-height: 2.4rem;
+            text-rendering: optimizeLegibility;
+        }
+    }
+
+    .footnotes-list {
+        font-size: 1.4rem;
+        margin: 4rem;
+
+        .footnote-item {
+            font-size: 1.4rem;
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    p {
+        padding: 1.725rem 0;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        text-rendering: optimizeLegibility;
+    }
+
+    blockquote {
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 2.4rem;
+        font-weight: 300;
+
+        p {
+            font-size: inherit;
+            line-height: 3.6rem;
+
+            .longquote {
+                font-size: 1.8rem;
+                font-weight: 300;
+                line-height: 1rem;
+            }
+        }
+    }
+
+    .longquote {
+        font-size: 1.8rem;
+        font-weight: 300;
+
+        p {
+            font-size: inherit;
+            text-align: left;
+        }
+    }
+
+    hr {
+        border: none;
+        text-align: center;
+        font-weight: 300;
+        margin: 2.4rem 0;
+
+        &::after {
+            content: "~";
+            text-align: center;
+            font-size: 3.6rem;
+        }
+    }
+
+    .dictionary-definition {
+        margin: 4rem;
+
+        dl {
+            background: darken($charleston-green, 2.5%);
+            border-radius: 1rem;
+            padding: 2rem;
+            width: 70%;
+            font-size: 1.4rem;
+            margin: auto;
+            color: $dark-medium-gray;
+            transition: .3s;
+
+            &:hover {
+                background: $charleston-green;
+                color: $platinum;
+            }
+
+            dt {
+                @extend h3;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .float-center {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        margin: 3rem;
+        border-radius: 1rem;
+    }
+
+    iframe {
+        @extend img;
+    }
+
+    blockquote.dialogue-left {
+        font-size: 1.7rem;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    blockquote.dialogue-right {
+        font-size: 1.7rem;
+        font-weight: 400;
+        text-align: right;
+    }
+}
+
+.post-full-title {
+    color: $platinum;
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.post-full-meta {
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+.post-full-image {
+    height: 15rem;
+    width: 75rem;
+    max-width: 100%;
+    max-height: 100%;
+    background: var(--lightgrey) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    cursor: pointer;
+    transition: .3s;
+
+    .image-details {
+        font-family: "Ubuntu", sans-serif;
+        color: $dark-medium-gray;
+        display: block;
+        font-size: 1.5rem;
+        align-self: flex-end;
+        padding: .8rem;
+        text-align: center;
+        background: $rich-black;
+        border-radius: 2rem;
+        margin: .5rem;
+        border: none;
+        opacity: .3;
+        cursor: pointer;
+        transition: .3s;
+
+        span {
+            font-size: 1.2rem;
+            margin-right: 1rem;
+            margin-left: .5rem;
+            display: none;
+        }
+
+        i {
+            margin: 0 .5rem;
+        }
+    }
+
+    &:hover {
+        background-color: $eerie-black;
+
+        .image-details {
+            opacity: .8;
+
+            span {
+                display: inline;
+            }
+
+            &:hover {
+                opacity: .9;
+                color: $platinum;
+            }
+        }
+    }
+
+
+}
+
+.post-full-header {
+    @extend .main-site-header;
+}
+
+.post-content,
+.post-full-content {
+    width: 100%;
+}

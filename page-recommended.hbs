@@ -1,0 +1,93 @@
+{{!< default}}
+
+{{> header}}
+<main class="home">
+    <div class="letters latest device-only">
+        <h3 class="home-title"><a class="home-title-link">Recommended</a></h3>
+        <div class="quotes-information">
+            <p>Here is a list of books I've read.</p>
+            <p>Click on one for more info.</p>
+            <p>In the future I will add articles, talks, documentaries and more.</p>
+            <p>It is also possible to buy these through Amazon.</p>
+            <a class="button-special buy-merchandise-device">
+                <span>
+                    <h3>Buy Books</h3>
+                </span>
+                <i class="fab fa-amazon"></i>
+            </a>
+            <div class="search-box">
+                <input class="search-bar" id="search-recommended-device" placeholder="Search Recommended"autofocus>
+                <i class="far fa-search search-button" /></i>
+            </div>
+        </div>
+    </div>
+    <div class="quotes">
+        <div id="recommended-results" class="quote-grid">
+
+        </div>
+        <div id="recommended-display" class="quote-grid">
+            {{#get "posts" limit="all" include="tags" filter="tags:book"}}
+            {{#foreach posts}}
+            <a class="book book-list-item {{title}}"
+                id="{{tags from="1" to="1" limit="all" visibility="internal" autolink="false"}}" href="{{url}}"><i
+                    class="load-icon fas fa-spinner"></i></a>
+            {{/foreach}}
+            {{/get}}
+        </div>
+    </div>
+    <div class="quote-sidebar information">
+        <div class="info-buttons">
+            <h3 class="home-title"><a class="home-title-link">Recommended</a></h3>
+            <div class="quotes-information">
+                <div class="search-box">
+                    <input class="search-bar" id="search-recommended" placeholder="Search Recommended" autofocus>
+                    <i class="far fa-search search-button" /></i>
+                </div>
+                <p>Here is a list of books I've read.</p>
+                <p>Click on one for more info.</p>
+                <p>In the future I will add articles, talks, documentaries and more.</p>
+                <p>It is also possible to buy these through Amazon.</p>
+                <a class="button-special buy-merchandise">
+                    <span>
+                        <h3>Buy Books</h3>
+                    </span>
+                    <i class="fab fa-amazon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="store-popup popup hide">
+
+        <div class="crypto-address-box eth-address-box">
+            <h3>Now Leaving Website</h3>
+            <p>If you buy through this Amazon link, I should receive a small cut.</p>
+            <a href="https://amzn.to/3hFMmOO" target="_blank" class=" button special copy-text copy-eth-address">
+                <span>
+                    <h3 class="copy-eth-address-label">Go to Amazon</h3>
+                </span>
+                <i class="fab fa-amazon copy-eth-icon"></i>
+            </a>
+            <br />
+            <p>Alternatively, click on a recommendation and then hit "Buy on Amazon".</p>
+
+        </div>
+
+        <button class="store-close close-button">
+            <i class="fas fa-window-close"></i>
+        </button>
+    </div>
+
+    <div class="leave-store screen hide">
+
+    </div>
+</main>
+
+<script>
+    RENDER_BOOKLIST();
+    setTimeout(RENDER_BOOKLIST, 1000); // Additional renders fix book cover display bugs
+    setTimeout(RENDER_BOOKLIST, 3000);
+    setTimeout(RENDER_BOOKLIST, 5000);
+</script>
+
+<script type="text/javascript" src="{{asset "js/home.js"}}"></script>

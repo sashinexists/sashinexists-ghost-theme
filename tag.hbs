@@ -1,0 +1,39 @@
+{{!< default}}
+
+{{> header}}
+
+<main>
+
+    <article class="post-full">
+
+            <header class="post-full-header">
+                <h1 class="post-full-title">Related to <em>{{#tag}}{{name}}{{/tag}}</em></h1>
+                <i class="fas fa-tag book-icon tags-icon"></i>
+            </header>
+
+            <section class="post-full-content">
+                <div class="post-content">
+                </div>
+            </section>
+
+        </article>
+
+        {{#foreach posts}}
+            {{#has tag="Quote"}}
+                {{> quote-preview}}
+            {{/has}}
+            {{^has tag="Quote"}}
+                {{#has tag="Book"}}
+                    {{> book-preview}}
+                {{/has}}
+                {{#has tag="Article"}}
+                {{> post-preview}}
+                {{/has}}
+                {{#has tag="Letter"}}
+                {{> letter-preview}}
+                {{/has}}
+            {{/has}}
+
+        {{/foreach}}
+</main>
+<script>RENDER_SEARCH();</script>

@@ -1,0 +1,151 @@
+.home {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top:2rem;
+    position: relative;
+    .letters, .articles, .information, .quotes {
+        border-radius: 1rem;
+        margin: 1rem;
+        padding:0;
+        background: $eerie-black;
+        height: fit-content;
+
+        .home-title {
+            color: $platinum;
+            padding: 2rem;
+            a {
+                color: $platinum;
+                &:hover{
+                    color: $turquoise-green;
+                } 
+            }
+        }
+        .button-special {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .letters, .articles {
+        position:relative;
+        .button-special{
+            margin:4rem;
+
+        }
+        .post-preview-link {
+            &:hover {
+                color: $platinum;
+                background-color: lighten($eerie-black, 4%);
+                .post-preview-title {
+                    color: $turquoise-green;
+                }
+            }
+
+        }
+    }
+
+    .information {
+        background-color: darken($eerie-black, 2.5%);
+        position: sticky;
+        top: 5rem;
+
+    }
+
+    .post-preview {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 15rem;
+        width: 40rem;
+        padding: 0;
+        margin:0;
+        border-radius: 0;
+        background: inherit
+    }
+    
+    .post-preview-title {
+        text-align: center;
+    }
+    
+    .post-preview-link:nth-of-type(even) {
+        background-color: $eerie-black;
+    }
+    
+    .post-preview-link:nth-of-type(odd) {
+        background-color: darken($eerie-black, 2.5%);
+    }
+    
+    .post-preview-excerpt {
+        display: none;
+    }
+    
+    .post-preview-header {
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+    }
+    
+    .post-preview-footer {
+        display: none;
+    }
+    
+    .post-preview-title {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    
+    .post-preview-image {
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 15rem;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .home {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:2rem;
+        margin:auto;
+        width:100vw;
+        padding-bottom: 5rem;
+
+        .letters:not(.latest) {
+            display: none;
+        }
+    }
+
+    .information, .information-placeholder {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+    .home {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin:auto;
+        margin-top:2rem;
+
+        width:100vw;
+        padding-bottom: 5rem;
+        .articles,.letters,.information {
+            max-width: 47.5%;
+        }
+
+    }
+
+    .information, .information-placeholder {
+        display: none;
+    }
+}
+
+

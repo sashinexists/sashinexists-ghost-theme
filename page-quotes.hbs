@@ -1,0 +1,94 @@
+{{!< default}}
+{{> header}}
+
+{{#post}}
+<main class="home">
+    <div class="letters latest device-only">
+        <h3 class="home-title"><a class="home-title-link">Quotes</a></h3>
+
+        <div class="quotes-information">
+            <p>Most of these are highlights from books I have read.</p>
+            <p>Click on one for more info.</p>
+            <p>You can also by mugs, t-shirts and hoodies with any of the quotes from the store.</p>
+            <!--<input class="search-bar" id="search-quotes-device" placeholder="Search" autofocus />-->
+            <a class="button-special send-ethereum buy-merchandise-device">
+                <span>
+                    <h3>Go to Store</h3>
+                </span>
+                <i class="fas fa-store"></i>
+            </a>
+            <div class="search-box">
+                <input class="search-bar" id="search-quotes-device" placeholder="Search Quotes" autofocus>
+                <i class="far fa-search search-button" /></i>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="quotes">
+        <div id="quote-results" class="quote-grid">
+
+        </div>
+        <div id="quote-display" class="quote-grid">
+            {{#get "posts" include="tags" filter="tags:quote" limit="all"}}
+            {{#foreach posts}}
+            {{> quote-preview-card}}
+            {{/foreach}}
+            {{/get}}
+        </div>
+    </div>
+    <div class="quote-sidebar information">
+        <div class="info-buttons">
+            <h3 class="home-title">Quotes</h3>
+            <div class="quotes-information">
+                <div class="search-box">
+                    <input class="search-bar" id="search-quotes" placeholder="Search Quotes" autofocus>
+                    <i class="far fa-search search-button" /></i>
+                </div>
+                <p>Most of these are highlights from books I have read.</p>
+                <p>Click on one for more info.</p>
+                <p>You can also by mugs, t-shirts and hoodies with any of the quotes from the store.</p>
+            </div>
+            <a class="button-special buy-merchandise">
+                <span>
+                    <h3>Go to Store</h3>
+                </span>
+                <i class="fas fa-store"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="store-popup popup hide">
+
+        <div class="crypto-address-box eth-address-box">
+            <h3>Now Leaving Website</h3>
+            <p>This will open up my Merchandise Store in a new tab.</p>
+            <a href="https://shop.spreadshirt.com/sashinexists" target="_blank"
+                class=" button special copy-text copy-eth-address">
+                <span>
+                    <h3 class="copy-eth-address-label">Go to Store</h3>
+                </span>
+                <i class="fas fa-store copy-eth-icon"></i>
+            </a>
+            <br />
+            <p>Alternatively, click on a quote and then hit "buy merchandise".</p>
+
+        </div>
+
+        <button class="store-close close-button">
+            <i class="fas fa-window-close"></i>
+        </button>
+    </div>
+
+    <div class="leave-store screen hide">
+
+    </div>
+
+
+
+
+</main>
+<script type="text/javascript" src="{{asset "js/home.js"}}"></script>
+
+
+{{/post}}

@@ -1,0 +1,51 @@
+.main-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list, .nav {
+    list-style: none;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list-item, .nav > li {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.nav-link, .nav > li > a {
+    color: $dark-medium-gray;
+    &:hover {
+        color: $platinum;
+    }
+}
+
+.twitter-button > .nav-icon {
+    transition: .3s;
+    &:hover {
+        color: $twitter-blue
+    }
+}
+
+.facebook-button > .nav-icon {
+    transition: .3s;
+    &:hover {
+        color: $facebook-blue
+    }
+}
+
+.nav-icon {
+    font-size: 2.4rem;
+}
+
+
+.menu-button {
+    display: none;
+}
+
+.device-nav {
+    display: none;
+}

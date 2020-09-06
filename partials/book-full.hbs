@@ -1,0 +1,51 @@
+<article class="book-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+
+    <header class="book-full-header">
+        <h1 class="book-full-title">Book Recommendation</h1>
+        <i class="fas fa-book book-icon"></i>
+    </header>
+
+    <section class="post-full-content">
+        <div class="books">
+            <span class="book {{title}}"
+                id="{{tags from="1" to="1" limit="all" visibility="internal" autolink="false"}}"></span>
+        </div>
+        <div class="buttons-box">
+            <a href="" id="{{tags from="2" to="2" limit="all" visibility="internal" autolink="false"}}"
+                class="button-special buy-book-amazon">
+                <span>
+                    <h3>Buy on Amazon</h3>
+                </span>
+                <i class="fab fa-amazon"></i>
+            </a>
+            <a href="" id="{{tags from="3" to="3" limit="all"visibility="public" autolink="false"}}"
+                class="button-special about-author">
+                <span>
+                    <h3>About the Author</h3>
+                </span>
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+
+        <hr>
+        <div class="post-content">
+            {{content}}
+        </div>
+    </section>
+    <div class="buttons-box-inline">
+        <a href="/" class="button-special return-home">
+            <span>
+                <h3>Return home</h3>
+            </span>
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="/recommended" class="button-special">
+            <span>
+                <h3>More Books</h3>
+            </span>
+            <i class="fas fa-book"></i>
+        </a>
+    </div>
+</article>
+
+{{> comments}}
