@@ -1,7 +1,7 @@
 const BOOKS_ISBN = [];
 const BOOKS_DATA = [];
 
-const API_KEY = window.keys.development.GoogleBooksAPI; // should be in the document
+const API_KEY = window.env.GoogleBooksAPI; // should be in the document
 
 const GET_BOOKS = async (startFrom) => {
     return fetch(`https://www.googleapis.com/books/v1/users/113934123220440811674/bookshelves/0/volumes?&key=${API_KEY}&fields=items(volumeInfo,%20searchInfo)&startIndex=${startFrom}&maxResults=40`)

@@ -1,5 +1,5 @@
-const SEARCH_API_KEY = window.keys.development.GhostSearchAPI; // should be in document for production, on your local ghost install for development
-const SEARCH_API_KEY_QUOTES = window.keys.development.GhostSearchAPI_secondary; // should be in document for production, on your local ghost install for development
+const SEARCH_API_KEY = window.env.GhostSearchAPI; // should be in document for production, on your local ghost install for development
+const SEARCH_API_KEY_QUOTES = window.env.GhostSearchAPI_secondary; // should be in document for production, on your local ghost install for development
 const SEARCH_API_KEY_RECOMMENDED = SEARCH_API_KEY_QUOTES;
 
 
