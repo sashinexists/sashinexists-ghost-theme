@@ -16,12 +16,43 @@ const COPY_BTC_LABEL = document.querySelector(".copy-btc-address-label");
 const COPY_ETH_ICON = document.querySelector(".copy-eth-icon");
 const COPY_BTC_ICON = document.querySelector(".copy-btc-icon");
 
+const BUY_MERCH_BOX = document.querySelector(".buy-merch-popup");
+const SHOP_AMAZON_BOX = document.querySelector(".shop-amazon-popup");
+
+
+const BUY_MERCH = document.querySelector(".buy-merchandise");
+const SHOP_AMAZON = document.querySelector(".shop-amazon");
+
+
 ETH_BUTTON.addEventListener("click", showEthAddress);
 BTC_BUTTON.addEventListener("click", showBTCAddress);
 SCREEN.addEventListener("click", closePopup);
 CLOSE_BUTTON.addEventListener("click", closePopup);
 COPY_BTC_BUTTON.addEventListener("click", copyBTC);
 COPY_ETH_BUTTON.addEventListener("click", copyEth);
+BUY_MERCH.addEventListener("click", showStoreLink);
+SHOP_AMAZON.addEventListener("click", showAmazonLink);
+
+
+function hideAmazonLink() {
+    SHOP_AMAZON_BOX.classList.add("hide");
+}
+
+function showAmazonLink() {
+    POPUP.classList.remove("hide");
+    SHOP_AMAZON_BOX.classList.remove("hide");
+    SCREEN.classList.remove("hide");
+}
+
+function hideStoreLink() {
+    BUY_MERCH_BOX.classList.add("hide");
+}
+
+function showStoreLink() {
+    POPUP.classList.remove("hide");
+    BUY_MERCH_BOX.classList.remove("hide");
+    SCREEN.classList.remove("hide");
+}
 
 
 function hideEthAddress() {
@@ -47,6 +78,8 @@ function showBTCAddress() {
 function closePopup() {
     hideEthAddress();
     hideBTCAddress();
+    hideAmazonLink();
+    hideStoreLink();
     SCREEN.classList.add("hide");
     POPUP.classList.add("hide");
     updateButtonLabel(COPY_BTC_LABEL, "Copy Address");
@@ -79,3 +112,4 @@ function updateButtonIcon(label, from, to) {
 function updateButtonLabel(label, text) {
     label.innerHTML = text;
 }
+

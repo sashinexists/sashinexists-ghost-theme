@@ -755,7 +755,7 @@ span.talk.talk-search-result, span.talk-search-result.talk-search-display {
   background: #171717;
   transition: .3s; }
 
-.crypto-address-box, .image-details-box {
+.crypto-address-box, .image-details-box, .buy-merch-popup, .shop-amazon-popup {
   width: 50vw;
   height: 50vh;
   position: fixed;
@@ -1534,7 +1534,7 @@ section.post-full.big-card.no-search-results, section.big-card.no-search-results
   .search-bar {
     background: #242424; }
 
-  .crypto-address-box, .image-details-box {
+  .crypto-address-box, .image-details-box, .buy-merch-popup, .shop-amazon-popup {
     width: 90vw;
     height: 50vh;
     position: fixed;

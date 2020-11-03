@@ -33,7 +33,6 @@
 .crypt-address {
     background: lighten($eerie-black, 5%);
     color: $platinum;
-    ;
     font-weight: 300;
     font-size: 2rem;
     border-radius: 1rem;
@@ -77,4 +76,8 @@
     &:hover {
         background: lighten($eerie-black, 15%);
     }
+}
+
+.buy-merch-popup, .shop-amazon-popup {
+    @extend .crypto-address-box
 }
