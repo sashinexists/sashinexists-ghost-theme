@@ -93,3 +93,16 @@ form.success>.subscribe-form-description-success {
     padding: 3rem;
     text-align: center;
 }
+
+.subscription-options {
+    display: flex;
+    flex-flow: row nowrap;   
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+        width: 100%;
+        text-align:left;
+    }
+}

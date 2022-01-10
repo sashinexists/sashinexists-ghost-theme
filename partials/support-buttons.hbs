@@ -19,11 +19,17 @@
         </span>
         <i class="fas fa-mug-hot"></i>
     </a>
-    <a class="button-special send-bitcoin">
+    <a class="button-special send-cardano">
         <span>
-            <h3>Send me Bitcoin</h3>
+            <h3>Send me Cardano</h3>
         </span>
-        <i class="fab fa-bitcoin"></i>
+        <i class="fas fa-braille"></i>
+    </a>
+    <a class="button-special send-solana">
+        <span>
+            <h3>Send me Solana</h3>
+        </span>
+        <i class="fas fa-money-check-edit-alt"></i>
     </a>
     <a class="button-special send-ethereum">
         <span>
@@ -37,36 +43,44 @@
         </span>
         <i class="fas fa-tshirt"></i>
     </a>
-    <a class="button-special shop-amazon">
-        <span>
-            <h3>Shop on Amazon</h3>
-        </span>
-        <i class="fab fa-amazon"></i>
-    </a>
 </div>
 
 <div class="popup hide">
 
+    <div class="crypto-address-box ada-address-box hide">
+        <h3>My Cardano (ADA) address</h3>
+        <input type="text"
+            value="addr1q9pgr9r0fea5xytrvx3ae8wk5p740a6anh8fwgnml08vhv2zsx2x7nnmgvgkxcdrmjwadgra2lm4m8wwju38h77wewcsmy7d20"
+            id="ada-address" class="crypt-address copy-from">
+        <button class="button-special copy-text copy-ada-address">
+            <span>
+                <h3 class="copy-ada-address-label">Copy address</h3>
+            </span>
+            <i class="fas fa-copy copy-ada-icon"></i>
+        </button>
+    </div>
+
+    <div class="crypto-address-box sol-address-box hide">
+        <h3>My Solana (SOL) address</h3>
+        <input type="text" value="8ePMbMUCdhA9vSWUwxBjrhCJUuKuPUnvJGuinKxiCmoW" id="sol-address"
+            class="crypt-address copy-from">
+        <button class=" button special copy-text copy-sol-address">
+            <span>
+                <h3 class="copy-sol-address-label">Copy address</h3>
+            </span>
+            <i class="fas fa-copy copy-sol-icon"></i>
+        </button>
+    </div>
+
     <div class="crypto-address-box eth-address-box hide">
-        <h3>My Ethereum address</h3>
-        <input type="text" value="0x29B6F575484b645E170c0692123609Ff37202c84" id="eth-address"
+        <h3>My Ethereum (ETH) address</h3>
+        <input type="text" value="0x3F58FD272e1D08109f651a0A2A18924849DbC549" id="eth-address"
             class="crypt-address copy-from">
         <button class=" button special copy-text copy-eth-address">
             <span>
                 <h3 class="copy-eth-address-label">Copy address</h3>
             </span>
             <i class="fas fa-copy copy-eth-icon"></i>
-        </button>
-    </div>
-
-    <div class="crypto-address-box btc-address-box hide">
-        <h3>My Bitcoin address</h3>
-        <input type="text" value="1CUSTxSNro7PhAJi11aCp7jK88VC2kNt6a" id="btc-address" class="crypt-address copy-from">
-        <button class="button-special copy-text copy-btc-address">
-            <span>
-                <h3 class="copy-btc-address-label">Copy address</h3>
-            </span>
-            <i class="fas fa-copy copy-btc-icon"></i>
         </button>
     </div>
 
@@ -82,20 +96,6 @@
         </a>
         <br />
         <p>Alternatively, click on a quote and then hit "buy merchandise".</p>
-
-    </div>
-
-    <div class="shop-amazon-popup hide">
-        <h3>Now Leaving Website</h3>
-        <p>If you buy through this Amazon link, I should receive a small cut.</p>
-        <a href="https://amzn.to/3hFMmOO" target="_blank" class=" button special copy-text copy-eth-address">
-            <span>
-                <h3 class="copy-eth-address-label">Go to Amazon</h3>
-            </span>
-            <i class="fab fa-amazon copy-eth-icon"></i>
-        </a>
-        <br />
-        <p>Alternatively, click on a recommendation and then hit "Buy on Amazon".</p>
 
     </div>
 

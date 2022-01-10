@@ -357,4 +357,16 @@
     .kg-bookmark-publisher {
         margin-right: 2rem;
     }
+
+    .subscription-options {
+        display: flex;
+        flex-flow: column nowrap;   
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+        span {
+            width: 100%;
+            text-align:left;
+        }
+    }
 }
