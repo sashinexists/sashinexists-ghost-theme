@@ -1,0 +1,52 @@
+{{!< default}}
+
+{{> header}}
+
+<main>
+    
+</main>
+
+{{#post}}
+<main>
+
+    <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+
+            <header class="post-full-header">
+                <h1 class="post-full-title"><a href={{url}}>{{title}}</a></h1>
+            </header>
+            {{#if feature_image}}
+            <figure class="post-full-image" style="background-image: url({{feature_image}})">
+            </figure>
+            {{/if}}
+
+            <section class="post-full-content">
+                {{content}}
+                                    <figure style="max-width:100%;text-align:center;"
+            class="notification-vault kg-card kg-embed-card kg-card-hascaption">
+            <figcaption>
+                Last updated 
+                <strong><time class="post-full-meta-date"
+                datetime="{{date format="YYYY-MM-DD"}}">{{date format="Do MMMM YYYY"}}</time></strong>
+                <br><br>
+                <a href="/now-archive">Click here for past Now pages</a>.
+            </figcaption>
+        </figure>
+                <hr>
+                <div class="post-content">
+                    {{#get "posts" filter="tags:now" limit="1"}}
+                    {{#foreach posts}}
+                    {{content}}
+                    {{/foreach}}
+                    {{/get}}
+                </div>
+            </section>
+        <div class="buttons-box">
+                <a href="/now-archive" class="button-special button-now-archive">
+                        <h3>View Past Now Pages</h3>
+                    <i class="fas fa-clock"></i>
+                </a>
+            </div>
+        
+</main>
+
+{{/post}}
