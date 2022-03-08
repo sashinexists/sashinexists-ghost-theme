@@ -164,7 +164,7 @@
   width: 100%;
   text-align: center;
 }
-.post-full img, .comments-full img, .book-full img, .quote-full img, .talk-full img, .post-preview img, .book-preview img, .quote-preview img, .post-full iframe, .comments-full iframe, .book-full iframe, .quote-full iframe, .talk-full iframe, .post-preview iframe, .book-preview iframe, .quote-preview iframe {
+.post-full img:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .comments-full img:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .book-full img:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .quote-full img:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .talk-full img:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .post-preview img:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .book-preview img:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .quote-preview img:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .post-full iframe:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .comments-full iframe:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .book-full iframe:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .quote-full iframe:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .talk-full iframe:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .post-preview iframe:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .book-preview iframe:not(.kg-bookmark-thumbnail, .kg-bookmark-icon), .quote-preview iframe:not(.kg-bookmark-thumbnail, .kg-bookmark-icon) {
   margin: 3rem;
   border-radius: 1rem;
 }
@@ -419,7 +419,7 @@ span.book.book-search-result, span.book-search-result.book-search-display {
 .quote-grid .book-list-item, .quote-grid .recommended-results-item:not(:only-child) {
   padding-left: 1rem;
 }
-.quote-grid .book-list-item:hover h3.book-title, .quote-grid .book-list-item:hover .book-title.load-icon, .quote-grid .book-list-item:hover .book-title.kg-bookmark-title, .quote-grid .book-list-item:hover .post-full .dictionary-definition dl dt.book-title, .quote-grid .book-list-item:hover .comments-full .dictionary-definition dl dt.book-title, .post-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .comments-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .post-preview .dictionary-definition dl dt.book-title, .post-preview .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .book-preview .dictionary-definition dl dt.book-title, .quote-grid .book-list-item:hover .quote-preview .dictionary-definition dl dt.book-title, .book-preview .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-preview .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .book-full .dictionary-definition dl dt.book-title, .quote-grid .book-list-item:hover .quote-full .dictionary-definition dl dt.book-title, .quote-grid .book-list-item:hover .talk-full .dictionary-definition dl dt.book-title, .book-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .talk-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover h3.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .book-title.load-icon, .quote-grid .recommended-results-item:not(:only-child):hover .book-title.kg-bookmark-title, .quote-grid .recommended-results-item:not(:only-child):hover .post-full .dictionary-definition dl dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .comments-full .dictionary-definition dl dt.book-title, .post-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .comments-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .post-preview .dictionary-definition dl dt.book-title, .post-preview .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .book-preview .dictionary-definition dl dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .quote-preview .dictionary-definition dl dt.book-title, .book-preview .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-preview .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .book-full .dictionary-definition dl dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .quote-full .dictionary-definition dl dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .talk-full .dictionary-definition dl dt.book-title, .book-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .talk-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title {
+.quote-grid .book-list-item:hover h3.book-title, .quote-grid .book-list-item:hover .book-title.load-icon, .quote-grid .book-list-item:hover .post-full .dictionary-definition dl dt.book-title, .quote-grid .book-list-item:hover .comments-full .dictionary-definition dl dt.book-title, .post-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .comments-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .post-preview .dictionary-definition dl dt.book-title, .post-preview .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .book-preview .dictionary-definition dl dt.book-title, .quote-grid .book-list-item:hover .quote-preview .dictionary-definition dl dt.book-title, .book-preview .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-preview .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .book-list-item:hover .book-full .dictionary-definition dl dt.book-title, .quote-grid .book-list-item:hover .quote-full .dictionary-definition dl dt.book-title, .quote-grid .book-list-item:hover .talk-full .dictionary-definition dl dt.book-title, .book-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .talk-full .dictionary-definition dl .quote-grid .book-list-item:hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover h3.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .book-title.load-icon, .quote-grid .recommended-results-item:not(:only-child):hover .post-full .dictionary-definition dl dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .comments-full .dictionary-definition dl dt.book-title, .post-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .comments-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .post-preview .dictionary-definition dl dt.book-title, .post-preview .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .book-preview .dictionary-definition dl dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .quote-preview .dictionary-definition dl dt.book-title, .book-preview .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-preview .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .book-full .dictionary-definition dl dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .quote-full .dictionary-definition dl dt.book-title, .quote-grid .recommended-results-item:not(:only-child):hover .talk-full .dictionary-definition dl dt.book-title, .book-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .quote-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title, .talk-full .dictionary-definition dl .quote-grid .recommended-results-item:not(:only-child):hover dt.book-title {
   color: #e9e9e9;
 }
 .quote-grid .book-list-item:nth-of-type(4n) {
@@ -442,7 +442,7 @@ span.book.book-search-result, span.book-search-result.book-search-display {
   font-size: 1.8rem;
   font-weight: 300;
 }
-.quote-grid h3.book-title, .quote-grid .book-title.load-icon, .quote-grid .book-title.kg-bookmark-title, .quote-grid .post-full .dictionary-definition dl dt.book-title, .quote-grid .comments-full .dictionary-definition dl dt.book-title, .post-full .dictionary-definition dl .quote-grid dt.book-title, .comments-full .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .post-preview .dictionary-definition dl dt.book-title, .post-preview .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .book-preview .dictionary-definition dl dt.book-title, .quote-grid .quote-preview .dictionary-definition dl dt.book-title, .book-preview .dictionary-definition dl .quote-grid dt.book-title, .quote-preview .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .book-full .dictionary-definition dl dt.book-title, .quote-grid .quote-full .dictionary-definition dl dt.book-title, .quote-grid .talk-full .dictionary-definition dl dt.book-title, .book-full .dictionary-definition dl .quote-grid dt.book-title, .quote-full .dictionary-definition dl .quote-grid dt.book-title, .talk-full .dictionary-definition dl .quote-grid dt.book-title {
+.quote-grid h3.book-title, .quote-grid .book-title.load-icon, .quote-grid .post-full .dictionary-definition dl dt.book-title, .quote-grid .comments-full .dictionary-definition dl dt.book-title, .post-full .dictionary-definition dl .quote-grid dt.book-title, .comments-full .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .post-preview .dictionary-definition dl dt.book-title, .post-preview .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .book-preview .dictionary-definition dl dt.book-title, .quote-grid .quote-preview .dictionary-definition dl dt.book-title, .book-preview .dictionary-definition dl .quote-grid dt.book-title, .quote-preview .dictionary-definition dl .quote-grid dt.book-title, .quote-grid .book-full .dictionary-definition dl dt.book-title, .quote-grid .quote-full .dictionary-definition dl dt.book-title, .quote-grid .talk-full .dictionary-definition dl dt.book-title, .book-full .dictionary-definition dl .quote-grid dt.book-title, .quote-full .dictionary-definition dl .quote-grid dt.book-title, .talk-full .dictionary-definition dl .quote-grid dt.book-title {
   font-size: 1.8rem;
   color: #aaa;
   font-weight: 300;
@@ -997,11 +997,11 @@ span.talk.talk-search-result, span.talk-search-result.talk-search-display {
 .kg-bookmark-card, .kg-embed-card {
   background: #1f1f1f;
   border-radius: 1rem;
-  text-align: center;
-  padding: 1rem;
-  margin: 5rem 0;
+  text-align: justify;
+  margin: 1.5rem 0;
 }
 .kg-bookmark-card figcaption, .kg-embed-card figcaption {
+  text-align: center;
   font-size: 1.4rem;
   padding: 1rem;
 }
@@ -1017,74 +1017,128 @@ span.talk.talk-search-result, span.talk-search-result.talk-search-display {
 }
 
 .kg-bookmark-container {
-  text-align: justify;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: stretch;
-  text-decoration: none;
+  background: #262626;
   color: #aaa;
-  border-radius: 1rem;
-  background: #0f0f0f;
-  cursor: pointer;
-  max-width: 100%;
 }
 .kg-bookmark-container:hover {
-  background: #1f1f1f;
+  background: #363636;
   color: #e9e9e9;
+  transition: 0.3s all;
 }
-.kg-bookmark-container:hover .kg-bookmark-metadata {
-  background: #171717;
+
+.kg-bookmark-card, .kg-embed-card,
+.kg-bookmark-card *,
+.kg-embed-card * {
+  box-sizing: border-box;
 }
-.kg-bookmark-container:hover .kg-bookmark-metadata:hover {
-  background: #2e2e2e;
+
+.kg-bookmark-card, .kg-embed-card,
+.kg-bookmark-publisher {
+  position: relative;
+  width: 100%;
+}
+
+.kg-bookmark-card a.kg-bookmark-container, .kg-embed-card a.kg-bookmark-container, .kg-bookmark-card .kg-bookmark-container.post-preview-title, .kg-embed-card .kg-bookmark-container.post-preview-title, .kg-bookmark-card .kg-bookmark-container.book-preview-title, .kg-embed-card .kg-bookmark-container.book-preview-title,
+.kg-bookmark-card a.kg-bookmark-container:hover {
+  display: flex;
+  text-decoration: none;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .kg-bookmark-content {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: stretch;
-  padding: 2rem;
-  font-size: 1.4rem;
-  order: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  overflow: hidden;
 }
 
-.kg-bookmark-description,
-.kg-bookmark-metadata {
-  margin-top: 1.2rem;
+.kg-bookmark-title {
+  font-size: 1.5rem;
+  line-height: 1.4em;
+  font-weight: 600;
+}
+
+.kg-bookmark-description {
+  display: -webkit-box;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  margin-top: 3px;
+  font-weight: 400;
+  max-height: 44px;
+  overflow-y: hidden;
+  opacity: 0.7;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .kg-bookmark-metadata {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
   align-items: center;
-  background: #1a1a1a;
-  border-radius: 1rem;
-  opacity: 0.8;
-  transition: 0.3s;
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-top: 1.5rem;
 }
 
-.kg-bookmark-thumbnail {
-  order: 2;
-}
-
-.kg-bookmark-thumbnail img, .kg-bookmark-thumbnail .post-full iframe, .post-full .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .post-preview iframe, .post-preview .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .book-preview iframe, .book-preview .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .book-full iframe, .book-full .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .talk-full iframe, .talk-full .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .quote-full iframe, .quote-full .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .quote-preview iframe, .quote-preview .kg-bookmark-thumbnail iframe, .kg-bookmark-thumbnail .comments-full iframe, .comments-full .kg-bookmark-thumbnail iframe {
-  width: 25rem;
-  height: 20rem;
-  object-fit: cover;
+.kg-bookmark-metadata > *:not(img) {
+  opacity: 0.7;
 }
 
 .kg-bookmark-icon {
-  width: 2rem;
-  height: 2rem;
-  opacity: 1;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
 }
 
-.kg-bookmark-author:after {
-  content: "•";
-  margin: 0 0.6rem;
+.kg-bookmark-author,
+.kg-bookmark-publisher {
+  display: inline;
+}
+
+.kg-bookmark-publisher {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 240px;
+  white-space: nowrap;
+  display: block;
+  line-height: 1.65em;
+}
+
+.kg-bookmark-metadata > span:nth-of-type(2) {
+  font-weight: 400;
+}
+
+.kg-bookmark-metadata > span:nth-of-type(2):before {
+  content: "—";
+  margin: 0 6px;
+}
+
+.kg-bookmark-metadata > span:last-of-type {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kg-bookmark-thumbnail {
+  position: relative;
+  flex-grow: 1;
+  min-width: 33%;
+  padding: 0;
+}
+
+.post-full .kg-bookmark-thumbnail img, .post-preview .kg-bookmark-thumbnail img, .book-preview .kg-bookmark-thumbnail img, .book-full .kg-bookmark-thumbnail img, .talk-full .kg-bookmark-thumbnail img, .quote-full .kg-bookmark-thumbnail img, .quote-preview .kg-bookmark-thumbnail img, .comments-full .kg-bookmark-thumbnail img, .post-full .kg-bookmark-thumbnail iframe, .post-preview .kg-bookmark-thumbnail .post-full iframe, .post-full .post-preview .kg-bookmark-thumbnail iframe, .book-preview .kg-bookmark-thumbnail .post-full iframe, .post-full .book-preview .kg-bookmark-thumbnail iframe, .book-full .kg-bookmark-thumbnail .post-full iframe, .post-full .book-full .kg-bookmark-thumbnail iframe, .talk-full .kg-bookmark-thumbnail .post-full iframe, .post-full .talk-full .kg-bookmark-thumbnail iframe, .quote-full .kg-bookmark-thumbnail .post-full iframe, .post-full .quote-full .kg-bookmark-thumbnail iframe, .quote-preview .kg-bookmark-thumbnail .post-full iframe, .post-full .quote-preview .kg-bookmark-thumbnail iframe, .comments-full .kg-bookmark-thumbnail .post-full iframe, .post-full .comments-full .kg-bookmark-thumbnail iframe, .post-full .kg-bookmark-thumbnail .post-preview iframe, .post-preview .post-full .kg-bookmark-thumbnail iframe, .post-preview .kg-bookmark-thumbnail iframe, .book-preview .kg-bookmark-thumbnail .post-preview iframe, .post-preview .book-preview .kg-bookmark-thumbnail iframe, .book-full .kg-bookmark-thumbnail .post-preview iframe, .post-preview .book-full .kg-bookmark-thumbnail iframe, .talk-full .kg-bookmark-thumbnail .post-preview iframe, .post-preview .talk-full .kg-bookmark-thumbnail iframe, .quote-full .kg-bookmark-thumbnail .post-preview iframe, .post-preview .quote-full .kg-bookmark-thumbnail iframe, .quote-preview .kg-bookmark-thumbnail .post-preview iframe, .post-preview .quote-preview .kg-bookmark-thumbnail iframe, .comments-full .kg-bookmark-thumbnail .post-preview iframe, .post-preview .comments-full .kg-bookmark-thumbnail iframe, .post-full .kg-bookmark-thumbnail .book-preview iframe, .book-preview .post-full .kg-bookmark-thumbnail iframe, .post-preview .kg-bookmark-thumbnail .book-preview iframe, .book-preview .post-preview .kg-bookmark-thumbnail iframe, .book-preview .kg-bookmark-thumbnail iframe, .book-full .kg-bookmark-thumbnail .book-preview iframe, .book-preview .book-full .kg-bookmark-thumbnail iframe, .talk-full .kg-bookmark-thumbnail .book-preview iframe, .book-preview .talk-full .kg-bookmark-thumbnail iframe, .quote-full .kg-bookmark-thumbnail .book-preview iframe, .book-preview .quote-full .kg-bookmark-thumbnail iframe, .quote-preview .kg-bookmark-thumbnail .book-preview iframe, .book-preview .quote-preview .kg-bookmark-thumbnail iframe, .comments-full .kg-bookmark-thumbnail .book-preview iframe, .book-preview .comments-full .kg-bookmark-thumbnail iframe, .post-full .kg-bookmark-thumbnail .book-full iframe, .book-full .post-full .kg-bookmark-thumbnail iframe, .post-preview .kg-bookmark-thumbnail .book-full iframe, .book-full .post-preview .kg-bookmark-thumbnail iframe, .book-preview .kg-bookmark-thumbnail .book-full iframe, .book-full .book-preview .kg-bookmark-thumbnail iframe, .book-full .kg-bookmark-thumbnail iframe, .talk-full .kg-bookmark-thumbnail .book-full iframe, .book-full .talk-full .kg-bookmark-thumbnail iframe, .quote-full .kg-bookmark-thumbnail .book-full iframe, .book-full .quote-full .kg-bookmark-thumbnail iframe, .quote-preview .kg-bookmark-thumbnail .book-full iframe, .book-full .quote-preview .kg-bookmark-thumbnail iframe, .comments-full .kg-bookmark-thumbnail .book-full iframe, .book-full .comments-full .kg-bookmark-thumbnail iframe, .post-full .kg-bookmark-thumbnail .talk-full iframe, .talk-full .post-full .kg-bookmark-thumbnail iframe, .post-preview .kg-bookmark-thumbnail .talk-full iframe, .talk-full .post-preview .kg-bookmark-thumbnail iframe, .book-preview .kg-bookmark-thumbnail .talk-full iframe, .talk-full .book-preview .kg-bookmark-thumbnail iframe, .book-full .kg-bookmark-thumbnail .talk-full iframe, .talk-full .book-full .kg-bookmark-thumbnail iframe, .talk-full .kg-bookmark-thumbnail iframe, .quote-full .kg-bookmark-thumbnail .talk-full iframe, .talk-full .quote-full .kg-bookmark-thumbnail iframe, .quote-preview .kg-bookmark-thumbnail .talk-full iframe, .talk-full .quote-preview .kg-bookmark-thumbnail iframe, .comments-full .kg-bookmark-thumbnail .talk-full iframe, .talk-full .comments-full .kg-bookmark-thumbnail iframe, .post-full .kg-bookmark-thumbnail .quote-full iframe, .quote-full .post-full .kg-bookmark-thumbnail iframe, .post-preview .kg-bookmark-thumbnail .quote-full iframe, .quote-full .post-preview .kg-bookmark-thumbnail iframe, .book-preview .kg-bookmark-thumbnail .quote-full iframe, .quote-full .book-preview .kg-bookmark-thumbnail iframe, .book-full .kg-bookmark-thumbnail .quote-full iframe, .quote-full .book-full .kg-bookmark-thumbnail iframe, .talk-full .kg-bookmark-thumbnail .quote-full iframe, .quote-full .talk-full .kg-bookmark-thumbnail iframe, .quote-full .kg-bookmark-thumbnail iframe, .quote-preview .kg-bookmark-thumbnail .quote-full iframe, .quote-full .quote-preview .kg-bookmark-thumbnail iframe, .comments-full .kg-bookmark-thumbnail .quote-full iframe, .quote-full .comments-full .kg-bookmark-thumbnail iframe, .post-full .kg-bookmark-thumbnail .quote-preview iframe, .quote-preview .post-full .kg-bookmark-thumbnail iframe, .post-preview .kg-bookmark-thumbnail .quote-preview iframe, .quote-preview .post-preview .kg-bookmark-thumbnail iframe, .book-preview .kg-bookmark-thumbnail .quote-preview iframe, .quote-preview .book-preview .kg-bookmark-thumbnail iframe, .book-full .kg-bookmark-thumbnail .quote-preview iframe, .quote-preview .book-full .kg-bookmark-thumbnail iframe, .talk-full .kg-bookmark-thumbnail .quote-preview iframe, .quote-preview .talk-full .kg-bookmark-thumbnail iframe, .quote-full .kg-bookmark-thumbnail .quote-preview iframe, .quote-preview .quote-full .kg-bookmark-thumbnail iframe, .quote-preview .kg-bookmark-thumbnail iframe, .comments-full .kg-bookmark-thumbnail .quote-preview iframe, .quote-preview .comments-full .kg-bookmark-thumbnail iframe, .post-full .kg-bookmark-thumbnail .comments-full iframe, .comments-full .post-full .kg-bookmark-thumbnail iframe, .post-preview .kg-bookmark-thumbnail .comments-full iframe, .comments-full .post-preview .kg-bookmark-thumbnail iframe, .book-preview .kg-bookmark-thumbnail .comments-full iframe, .comments-full .book-preview .kg-bookmark-thumbnail iframe, .book-full .kg-bookmark-thumbnail .comments-full iframe, .comments-full .book-full .kg-bookmark-thumbnail iframe, .talk-full .kg-bookmark-thumbnail .comments-full iframe, .comments-full .talk-full .kg-bookmark-thumbnail iframe, .quote-full .kg-bookmark-thumbnail .comments-full iframe, .comments-full .quote-full .kg-bookmark-thumbnail iframe, .quote-preview .kg-bookmark-thumbnail .comments-full iframe, .comments-full .quote-preview .kg-bookmark-thumbnail iframe, .comments-full .kg-bookmark-thumbnail iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
 }
 
 .gh-signin {
@@ -1128,11 +1182,11 @@ form.success > div.gh-signin > button.gh-btn > span.subscribe-btn-text {
   display: none;
 }
 
-form.success > header > h3.subscribe-form-title, form.success > header > .subscribe-form-title.load-icon, .post-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, .post-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title, .book-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title, .book-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, .talk-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, .quote-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, .quote-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title, .comments-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, form.success > header > .subscribe-form-title.kg-bookmark-title {
+form.success > header > h3.subscribe-form-title, form.success > header > .subscribe-form-title.load-icon, .post-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, .post-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title, .book-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title, .book-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, .talk-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, .quote-full .dictionary-definition dl form.success > header > dt.subscribe-form-title, .quote-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title, .comments-full .dictionary-definition dl form.success > header > dt.subscribe-form-title {
   display: none;
 }
 
-form.success > header > h3.subscribe-form-title-success, form.success > header > .subscribe-form-title-success.load-icon, .post-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .post-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .book-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .book-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .talk-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .quote-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .quote-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .comments-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, form.success > header > .subscribe-form-title-success.kg-bookmark-title {
+form.success > header > h3.subscribe-form-title-success, form.success > header > .subscribe-form-title-success.load-icon, .post-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .post-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .book-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .book-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .talk-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .quote-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .quote-preview .dictionary-definition dl form.success > header > dt.subscribe-form-title-success, .comments-full .dictionary-definition dl form.success > header > dt.subscribe-form-title-success {
   display: inline-block;
 }
 
@@ -1386,7 +1440,7 @@ h2 {
   font-weight: 300;
 }
 
-h3, .load-icon, .post-full .dictionary-definition dl dt, .post-preview .dictionary-definition dl dt, .book-preview .dictionary-definition dl dt, .book-full .dictionary-definition dl dt, .talk-full .dictionary-definition dl dt, .quote-full .dictionary-definition dl dt, .quote-preview .dictionary-definition dl dt, .comments-full .dictionary-definition dl dt, .kg-bookmark-title {
+h3, .load-icon, .post-full .dictionary-definition dl dt, .post-preview .dictionary-definition dl dt, .book-preview .dictionary-definition dl dt, .book-full .dictionary-definition dl dt, .talk-full .dictionary-definition dl dt, .quote-full .dictionary-definition dl dt, .quote-preview .dictionary-definition dl dt, .comments-full .dictionary-definition dl dt {
   font-weight: 300;
   font-size: 2.4rem;
 }

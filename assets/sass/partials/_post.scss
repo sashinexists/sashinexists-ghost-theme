@@ -115,7 +115,7 @@
         text-align: center;
     }
 
-    img {
+    img:not(.kg-bookmark-thumbnail,.kg-bookmark-icon) {
         margin: 3rem;
         border-radius: 1rem;
     }
